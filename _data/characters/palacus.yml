@@ -1,0 +1,21 @@
+id: palacus
+name: Palacus
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/images/characters/palacus-headshot.png
+  full: /assets/images/characters/palacus.png
+dead: false
+deaths: []
+player_id: tinidiablo
+statblock:
+  class: Warlock
+  subclass: Pact of the Blade
+  attributes:
+    strength: 13
+    dexterity: 11
+    constitution: 16
+    intelligence: 12
+    wisdom: 7
+    charisma: 14
+    luck: 14

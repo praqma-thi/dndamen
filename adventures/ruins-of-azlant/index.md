@@ -1,0 +1,99 @@
+---
+layout: default
+title: Ruins of Azlant
+adventure: ruins-of-azlant
+---
+{% assign adventure = site.data.adventures | where: "slug", page.adventure | first %}
+
+<header class="adventure-intro">
+  <h1>{{ adventure.name }}</h1>
+  <img src="{{ adventure.logo | relative_url }}" alt="{{ adventure.name }} logo">
+  <p>{{ adventure.description }}</p>
+</header>
+
+## Characters
+
+<fieldset class="character-browser">
+  <legend class="visually-hidden">Choose a character</legend>
+  {% for character_id in adventure.characters %}
+    {% assign character = site.data.characters[character_id] %}
+  <input
+    class="character-radio"
+    type="radio"
+    name="selected-character"
+    id="character-radio-{{ character.id }}"
+    value="{{ character.id }}"
+    aria-controls="character-panel-{{ character.id }}"
+    {% if forloop.first %}checked{% endif %}>
+  {% endfor %}
+
+  <div class="character-picker">
+  {% for character_id in adventure.characters %}
+    {% assign character = site.data.characters[character_id] %}
+    <label class="character-tab" for="character-radio-{{ character.id }}">
+      <img src="{{ character.art.headshot | relative_url }}" alt="" loading="lazy">
+      <span>{{ character.name | split: " " | first }}</span>
+    </label>
+  {% endfor %}
+  </div>
+
+  <div class="character-panels">
+  {% for character_id in adventure.characters %}
+    {% assign character = site.data.characters[character_id] %}
+    {% assign player = site.data.players | where: "id", character.player_id | first %}
+    <section
+      class="character-panel"
+      id="character-panel-{{ character.id }}"
+      aria-labelledby="character-radio-{{ character.id }}">
+      <div class="character-art-frame">
+        <img class="character-full-art" src="{{ character.art.full | relative_url }}" alt="{{ character.name }} full character art">
+      </div>
+      <div class="character-summary">
+        <header class="character-summary-header">
+          <div>
+            <p class="eyebrow">Character profile</p>
+            <h3>{{ character.name }}</h3>
+          </div>
+          <span class="character-status{% if character.dead %} is-dead{% endif %}">
+            {% if character.dead %}Dead{% else %}Alive{% endif %}
+          </span>
+        </header>
+
+        <dl class="character-facts">
+          <div><dt>Folk</dt><dd>{{ character.folk }}</dd></div>
+          {% if character.subfolk %}
+          <div><dt>Subfolk</dt><dd>{{ character.subfolk }}</dd></div>
+          {% endif %}
+          <div><dt>Class</dt><dd>{{ character.statblock.class }}{% if character.statblock.subclass %}<span class="subclass"> · {{ character.statblock.subclass }}</span>{% endif %}</dd></div>
+          <div><dt>Player</dt><dd>{{ player.alias }}</dd></div>
+        </dl>
+
+        <section class="stat-block" aria-label="Ability scores">
+          <h4>Ability Scores</h4>
+          <div class="ability-scores">
+          {% for attribute in character.statblock.attributes %}
+            {% assign modifier = attribute[1] | minus: 10 | divided_by: 2 %}
+            <div class="ability-score">
+              <span>{{ attribute[0] | capitalize }}</span>
+              <strong>{{ attribute[1] }}</strong>
+              <small>{% if modifier >= 0 %}+{% endif %}{{ modifier }}</small>
+            </div>
+          {% endfor %}
+          </div>
+        </section>
+
+        {% if character.deaths.size > 0 %}
+        <details class="death-history">
+          <summary>Death history</summary>
+          <ul>
+            {% for death in character.deaths %}
+            <li>Died at level {{ death.level }}; killer: {{ death.killer }}.</li>
+            {% endfor %}
+          </ul>
+        </details>
+        {% endif %}
+      </div>
+    </section>
+  {% endfor %}
+  </div>
+</fieldset>

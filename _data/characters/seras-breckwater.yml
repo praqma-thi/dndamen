@@ -1,0 +1,21 @@
+id: seras-breckwater
+name: Seras Breckwater
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/images/characters/seras-headshot.png
+  full: /assets/images/characters/seras.png
+dead: false
+deaths: []
+player_id: funkyman
+statblock:
+  class: Alchemist
+  subclass: Apothecary
+  attributes:
+    strength: 10
+    dexterity: 13
+    constitution: 14
+    intelligence: 16
+    wisdom: 13
+    charisma: 11
+    luck: 10

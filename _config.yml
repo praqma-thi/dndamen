@@ -1,0 +1,13 @@
+title: DnDamen
+description: The gang's adventures.
+baseurl: "/dndamen"
+url: ""
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Dockerfile
+  - .dockerignore

@@ -1,0 +1,21 @@
+id: merit-subaya
+name: Merit Subaya
+folk: Human
+subfolk: Keleshite
+art:
+  headshot: /assets/images/characters/subaya-headshot.png
+  full: /assets/images/characters/subaya.png
+dead: false
+deaths: []
+player_id: shrooms
+statblock:
+  class: Cleric
+  subclass: Grave Domain
+  attributes:
+    strength: 15
+    dexterity: 10
+    constitution: 14
+    intelligence: 8
+    wisdom: 15
+    charisma: 9
+    luck: 13

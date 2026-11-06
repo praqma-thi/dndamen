@@ -1,0 +1,21 @@
+id: rheia-daeghdan
+name: Rheia Daeghdan
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/images/characters/rheia-headshot.png
+  full: /assets/images/characters/rheia.png
+dead: false
+deaths: []
+player_id: kitty
+statblock:
+  class: Wizard
+  subclass: School of the Familiar
+  attributes:
+    strength: 12
+    dexterity: 15
+    constitution: 14
+    intelligence: 18
+    wisdom: 14
+    charisma: 14
+    luck: 14
