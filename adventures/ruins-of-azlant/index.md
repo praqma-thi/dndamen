@@ -5,6 +5,7 @@ adventure: ruins-of-azlant
 ---
 
 {% assign adventure = site.data.adventures | where: "slug", page.adventure | first %}
+{% assign character_count = adventure.characters | size %}
 
 <header class="adventure-intro">
   <h1>{{ adventure.name }}</h1>
@@ -12,10 +13,10 @@ adventure: ruins-of-azlant
   <p>{{ adventure.description }}</p>
 </header>
 
-## Characters
+<h2>Characters</h2>
 
 <fieldset class="character-browser">
-  <legend class="visually-hidden">Choose a character</legend>
+  <legend class="visually-hidden">Choose a player character or NPC</legend>
   {% for character_id in adventure.characters %}
     {% assign character = site.data.characters[character_id] %}
   <input
@@ -27,15 +28,48 @@ adventure: ruins-of-azlant
     aria-controls="character-panel-{{ character.id }}"
     {% if forloop.first %}checked{% endif %}>
   {% endfor %}
-
-  <div class="character-picker">
-  {% for character_id in adventure.characters %}
-    {% assign character = site.data.characters[character_id] %}
-    <label class="character-tab" for="character-radio-{{ character.id }}">
-      <img src="{{ character.art.headshot | relative_url }}" alt="" loading="lazy">
-      <span>{{ character.name | split: " " | first }}</span>
-    </label>
+  {% for npc_id in adventure.npcs %}
+    {% assign npc = site.data.npcs[npc_id] %}
+  <input
+    class="character-radio"
+    type="radio"
+    name="selected-character"
+    id="npc-radio-{{ npc.id }}"
+    value="{{ npc.id }}"
+    aria-controls="npc-panel-{{ npc.id }}"
+    {% if character_count == 0 and forloop.first %}checked{% endif %}>
   {% endfor %}
+
+  <div class="character-pickers">
+    {% if character_count > 0 %}
+      <section class="picker-category" aria-labelledby="player-picker-title">
+        <h3 id="player-picker-title">Player Characters</h3>
+        <div class="character-picker">
+        {% for character_id in adventure.characters %}
+          {% assign character = site.data.characters[character_id] %}
+          <label class="character-tab" for="character-radio-{{ character.id }}">
+            <img src="{{ character.art.headshot | relative_url }}" alt="" loading="lazy">
+            <span>{{ character.name | split: " " | first }}</span>
+          </label>
+        {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if adventure.npcs.size > 0 %}
+    <section class="picker-category" aria-labelledby="npc-picker-title">
+      <h3 id="npc-picker-title">NPCs</h3>
+      <div class="character-picker">
+      {% for npc_id in adventure.npcs %}
+        {% assign npc = site.data.npcs[npc_id] %}
+        <label class="character-tab" for="npc-radio-{{ npc.id }}">
+          <img src="{{ npc.art.headshot | relative_url }}" alt="" loading="lazy">
+          <span>{{ npc.name | split: " " | first }}</span>
+        </label>
+      {% endfor %}
+      </div>
+    </section>
+    {% endif %}
   </div>
 
   <div class="character-panels">
@@ -45,13 +79,13 @@ adventure: ruins-of-azlant
     <section
       class="character-panel"
       id="character-panel-{{ character.id }}"
-      aria-labelledby="character-radio-{{ character.id }}">
+      aria-labelledby="character-name-{{ character.id }}">
       <div class="character-art-frame">
         <img class="character-full-art" src="{{ character.art.full | relative_url }}" alt="{{ character.name }} full character art">
       </div>
       <div class="character-summary">
         <header class="character-summary-header">
-          <h3>{{ character.name }}</h3>
+          <h3 id="character-name-{{ character.id }}">{{ character.name }}</h3>
           <span class="character-status{% if character.dead %} is-dead{% endif %}">
             {% if character.dead %}Dead{% else %}Alive{% endif %}
           </span>
@@ -73,17 +107,17 @@ adventure: ruins-of-azlant
           <div class="ability-scores">
           {% for attribute in character.statblock.attributes %}
             {% assign modifier = attribute[1] | minus: 10 | divided_by: 2 %}
-          <div class="ability-score{% if attribute[0] == 'luck' %} luck-score{% endif %}">
+            <div class="ability-score{% if attribute[0] == 'luck' %} luck-score{% endif %}">
               <span>{{ attribute[0] | capitalize }}</span>
               <strong>{{ attribute[1] }}</strong>
               <small>{% if modifier >= 0 %}+{% endif %}{{ modifier }}</small>
             </div>
-          {% if forloop.index == 3 %}
-          <div class="ability-score max-hp">
-            <span>Max HP</span>
-            <strong>{{ character.statblock.max_hp }} <span class="hp-heart" aria-hidden="true">♥</span></strong>
-          </div>
-          {% endif %}
+            {% if forloop.index == 3 %}
+            <div class="ability-score max-hp">
+              <span>Max HP</span>
+              <strong>{{ character.statblock.max_hp }} <span class="hp-heart" aria-hidden="true">♥</span></strong>
+            </div>
+            {% endif %}
           {% endfor %}
           </div>
         </section>
@@ -100,7 +134,76 @@ adventure: ruins-of-azlant
         {% endif %}
       </div>
     </section>
+  {% endfor %}
+  {% for npc_id in adventure.npcs %}
+    {% assign npc = site.data.npcs[npc_id] %}
+    <section
+      class="character-panel npc-panel"
+      id="npc-panel-{{ npc.id }}"
+      aria-labelledby="npc-name-{{ npc.id }}">
+      <div class="character-art-frame">
+        <img class="character-full-art" src="{{ npc.art.full | relative_url }}" alt="{{ npc.name }} full character art">
+      </div>
+      <div class="character-summary">
+        <header class="character-summary-header">
+          <h3 id="npc-name-{{ npc.id }}">{{ npc.name }}</h3>
+          <span class="character-status{% if npc.dead %} is-dead{% endif %}">
+            {% if npc.dead %}Dead{% else %}Alive{% endif %}
+          </span>
+        </header>
 
-{% endfor %}
+        <dl class="character-facts npc-facts">
+          <div><dt>Folk</dt><dd>{{ npc.folk }}</dd></div>
+          {% if npc.subfolk %}
+          <div><dt>Subfolk</dt><dd>{{ npc.subfolk }}</dd></div>
+          {% endif %}
+        </dl>
+
+        <section class="npc-description">
+          <h4>Notes</h4>
+          <p>{{ npc.description | escape | newline_to_br }}</p>
+        </section>
+      </div>
+    </section>
+  {% endfor %}
   </div>
+
+  <style>
+    {% for character_id in adventure.characters %}
+      {% assign character = site.data.characters[character_id] %}
+    #character-radio-{{ character.id }}:checked ~ .character-pickers label[for="character-radio-{{ character.id }}"] {
+      color: #eee7d9;
+      background: #242f39;
+      border-color: #d3b16c;
+    }
+    #character-radio-{{ character.id }}:checked ~ .character-pickers label[for="character-radio-{{ character.id }}"] img {
+      border-color: #d3b16c;
+    }
+    #character-radio-{{ character.id }}:focus-visible ~ .character-pickers label[for="character-radio-{{ character.id }}"] {
+      outline: 2px solid #d3b16c;
+      outline-offset: 2px;
+    }
+    #character-radio-{{ character.id }}:checked ~ .character-panels #character-panel-{{ character.id }} {
+      display: grid;
+    }
+    {% endfor %}
+    {% for npc_id in adventure.npcs %}
+      {% assign npc = site.data.npcs[npc_id] %}
+    #npc-radio-{{ npc.id }}:checked ~ .character-pickers label[for="npc-radio-{{ npc.id }}"] {
+      color: #eee7d9;
+      background: #242f39;
+      border-color: #d3b16c;
+    }
+    #npc-radio-{{ npc.id }}:checked ~ .character-pickers label[for="npc-radio-{{ npc.id }}"] img {
+      border-color: #d3b16c;
+    }
+    #npc-radio-{{ npc.id }}:focus-visible ~ .character-pickers label[for="npc-radio-{{ npc.id }}"] {
+      outline: 2px solid #d3b16c;
+      outline-offset: 2px;
+    }
+    #npc-radio-{{ npc.id }}:checked ~ .character-panels #npc-panel-{{ npc.id }} {
+      display: grid;
+    }
+    {% endfor %}
+  </style>
 </fieldset>

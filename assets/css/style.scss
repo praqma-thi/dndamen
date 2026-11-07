@@ -160,6 +160,20 @@ h2 {
   outline: none;
 }
 
+.character-pickers {
+  display: grid;
+  align-content: start;
+  gap: 1.25rem;
+  min-width: 0;
+}
+
+.picker-category h3 {
+  margin: 0 0 0.6rem;
+  color: $gold;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+}
+
 .character-picker {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -196,53 +210,13 @@ h2 {
   border-radius: 50%;
 }
 
-.character-radio:nth-of-type(1):checked ~ .character-picker .character-tab:nth-of-type(1),
-.character-radio:nth-of-type(2):checked ~ .character-picker .character-tab:nth-of-type(2),
-.character-radio:nth-of-type(3):checked ~ .character-picker .character-tab:nth-of-type(3),
-.character-radio:nth-of-type(4):checked ~ .character-picker .character-tab:nth-of-type(4),
-.character-radio:nth-of-type(5):checked ~ .character-picker .character-tab:nth-of-type(5) {
-  color: $paper;
-  background: $surface-raised;
-  border-color: $gold;
-}
-
-.character-radio:nth-of-type(1):checked ~ .character-picker .character-tab:nth-of-type(1) img,
-.character-radio:nth-of-type(2):checked ~ .character-picker .character-tab:nth-of-type(2) img,
-.character-radio:nth-of-type(3):checked ~ .character-picker .character-tab:nth-of-type(3) img,
-.character-radio:nth-of-type(4):checked ~ .character-picker .character-tab:nth-of-type(4) img,
-.character-radio:nth-of-type(5):checked ~ .character-picker .character-tab:nth-of-type(5) img {
-  border-color: $gold;
-}
-
-.character-tab:hover,
-.character-radio:nth-of-type(1):focus-visible ~ .character-picker .character-tab:nth-of-type(1),
-.character-radio:nth-of-type(2):focus-visible ~ .character-picker .character-tab:nth-of-type(2),
-.character-radio:nth-of-type(3):focus-visible ~ .character-picker .character-tab:nth-of-type(3),
-.character-radio:nth-of-type(4):focus-visible ~ .character-picker .character-tab:nth-of-type(4),
-.character-radio:nth-of-type(5):focus-visible ~ .character-picker .character-tab:nth-of-type(5) {
+.character-tab:hover {
   color: $paper;
   border-color: $gold;
-  outline: none;
-}
-
-.character-radio:nth-of-type(1):focus-visible ~ .character-picker .character-tab:nth-of-type(1),
-.character-radio:nth-of-type(2):focus-visible ~ .character-picker .character-tab:nth-of-type(2),
-.character-radio:nth-of-type(3):focus-visible ~ .character-picker .character-tab:nth-of-type(3),
-.character-radio:nth-of-type(4):focus-visible ~ .character-picker .character-tab:nth-of-type(4),
-.character-radio:nth-of-type(5):focus-visible ~ .character-picker .character-tab:nth-of-type(5) {
-  box-shadow: 0 0 0 2px $ink, 0 0 0 4px $gold;
 }
 
 .character-panel {
   display: none;
-}
-
-.character-radio:nth-of-type(1):checked ~ .character-panels .character-panel:nth-child(1),
-.character-radio:nth-of-type(2):checked ~ .character-panels .character-panel:nth-child(2),
-.character-radio:nth-of-type(3):checked ~ .character-panels .character-panel:nth-child(3),
-.character-radio:nth-of-type(4):checked ~ .character-panels .character-panel:nth-child(4),
-.character-radio:nth-of-type(5):checked ~ .character-panels .character-panel:nth-child(5) {
-  display: grid;
 }
 
 .character-panel {
@@ -327,6 +301,28 @@ h2 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.7rem 1.25rem;
   margin: 1rem 0 1.25rem;
+}
+
+.npc-facts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.npc-description {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background: #141a21;
+  border: 1px solid $line;
+  border-radius: 0.5rem;
+}
+
+.npc-description h4 {
+  margin: 0 0 0.5rem;
+  color: $gold;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.npc-description p {
+  margin: 0;
 }
 
 .character-facts div {

@@ -1,0 +1,10 @@
+id: archivist-torin
+name: Archivist Torin
+folk: Elf
+art:
+  headshot: /assets/images/character-headshot-placeholder.svg
+  full: /assets/images/character-full-placeholder.svg
+dead: false
+description: >
+  The colony's quiet keeper of maps and old records. Ask him about any markings,
+  ruins, or unfamiliar names found during the expedition.
