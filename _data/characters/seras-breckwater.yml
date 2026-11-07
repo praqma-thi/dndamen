@@ -9,6 +9,8 @@ dead: false
 deaths: []
 player_id: funkyman
 statblock:
+  level: 2
+  max_hp: 17
   class: Alchemist
   subclass: Apothecary
   attributes:

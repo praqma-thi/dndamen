@@ -302,18 +302,9 @@ h2 {
 
 .character-summary-header h3 {
   margin: 0;
-  color: $paper;
+  color: $gold;
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.5rem, 2vw, 2rem);
-}
-
-.eyebrow {
-  margin: 0 0 0.2rem;
-  color: $gold;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
 }
 
 .character-status {
@@ -333,7 +324,7 @@ h2 {
 
 .character-facts {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.7rem 1.25rem;
   margin: 1rem 0 1.25rem;
 }
@@ -410,6 +401,20 @@ h2 {
   font-weight: 700;
 }
 
+.ability-score.max-hp {
+  border-color: $gold;
+}
+
+.ability-score.max-hp .hp-heart {
+  color: #ee91ad;
+  font-family: system-ui, sans-serif;
+  font-size: 0.72em;
+}
+
+.ability-score.luck-score {
+  border: 1px solid $gold;
+}
+
 .death-history {
   margin-top: 1rem;
   color: $muted;
@@ -476,6 +481,10 @@ h2 {
 
   .character-panel {
     grid-template-columns: 1fr;
+  }
+
+  .character-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .character-art-frame {

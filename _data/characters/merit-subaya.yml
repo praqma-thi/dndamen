@@ -9,6 +9,8 @@ dead: false
 deaths: []
 player_id: shrooms
 statblock:
+  level: 2
+  max_hp: 20
   class: Cleric
   subclass: Grave Domain
   attributes:
