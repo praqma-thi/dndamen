@@ -9,8 +9,10 @@ adventure: ruins-of-azlant
 
 <header class="adventure-intro">
   <h1>{{ adventure.name }}</h1>
-  <img src="{{ adventure.logo | relative_url }}" alt="{{ adventure.name }} logo">
-  <p>{{ adventure.description }}</p>
+  <div class="adventure-overview">
+    <img src="{{ adventure.logo | relative_url }}" alt="{{ adventure.name }} logo">
+    <p>{{ adventure.description }}</p>
+  </div>
 </header>
 
 <fieldset class="character-browser">

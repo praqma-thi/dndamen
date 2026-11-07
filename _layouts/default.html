@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
-    {% include sidebar.html %}
+    <header class="topbar">
+      {% unless page.url == "/" %}
+      <a class="topbar-home" href="{{ '/' | relative_url }}">← Home</a>
+      {% endunless %}
+      <a class="topbar-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </header>
     <main class="content">
       {{ content }}
     </main>
