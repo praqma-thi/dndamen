@@ -1,5 +1,7 @@
 id: captain-elinor-vale
 name: Captain Elinor Vale
+role: Colony Guard Captain
+group: Colonist
 folk: Human
 subfolk: Avistani
 art:

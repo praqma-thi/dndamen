@@ -1,5 +1,7 @@
 id: archivist-torin
 name: Archivist Torin
+role: Colony Archivist
+group: Villain
 folk: Elf
 art:
   headshot: /assets/images/character-headshot-placeholder.svg

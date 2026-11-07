@@ -13,8 +13,6 @@ adventure: ruins-of-azlant
   <p>{{ adventure.description }}</p>
 </header>
 
-<h2>Characters</h2>
-
 <fieldset class="character-browser">
   <legend class="visually-hidden">Choose a player character or NPC</legend>
   {% for character_id in adventure.characters %}
@@ -43,7 +41,7 @@ adventure: ruins-of-azlant
   <div class="character-pickers">
     {% if character_count > 0 %}
       <section class="picker-category" aria-labelledby="player-picker-title">
-        <h3 id="player-picker-title">Player Characters</h3>
+        <h2 id="player-picker-title">Player Characters</h2>
         <div class="character-picker">
         {% for character_id in adventure.characters %}
           {% assign character = site.data.characters[character_id] %}
@@ -58,15 +56,23 @@ adventure: ruins-of-azlant
 
     {% if adventure.npcs.size > 0 %}
     <section class="picker-category" aria-labelledby="npc-picker-title">
-      <h3 id="npc-picker-title">NPCs</h3>
+      <h2 id="npc-picker-title">NPCs</h2>
       <div class="character-picker">
-      {% for npc_id in adventure.npcs %}
-        {% assign npc = site.data.npcs[npc_id] %}
+        {% capture npc_group_labels %}{% for npc_id in adventure.npcs %}{% assign npc = site.data.npcs[npc_id] %}{{ npc.group | strip }}{% unless forloop.last %}|||{% endunless %}{% endfor %}{% endcapture %}
+        {% assign npc_groups = npc_group_labels | split: "|||" | uniq | sort %}
+        {% for group in npc_groups %}
+        <h3 class="npc-group-divider">{{ group | strip | escape }}</h3>
+          {% for npc_id in adventure.npcs %}
+            {% assign npc = site.data.npcs[npc_id] %}
+            {% assign npc_group = npc.group | strip %}
+            {% if npc_group == group %}
         <label class="character-tab" for="npc-radio-{{ npc.id }}">
           <img src="{{ npc.art.headshot | relative_url }}" alt="" loading="lazy">
           <span>{{ npc.name | split: " " | first }}</span>
         </label>
-      {% endfor %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
       </div>
     </section>
     {% endif %}
@@ -160,7 +166,7 @@ adventure: ruins-of-azlant
         </dl>
 
         <section class="npc-description">
-          <h4>Notes</h4>
+          <h4>{{ npc.role }}</h4>
           <p>{{ npc.description | escape | newline_to_br }}</p>
         </section>
       </div>
