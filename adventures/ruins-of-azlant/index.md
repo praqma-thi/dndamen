@@ -3,6 +3,7 @@ layout: default
 title: Ruins of Azlant
 adventure: ruins-of-azlant
 ---
+
 {% assign adventure = site.data.adventures | where: "slug", page.adventure | first %}
 
 <header class="adventure-intro">
@@ -50,21 +51,20 @@ adventure: ruins-of-azlant
       </div>
       <div class="character-summary">
         <header class="character-summary-header">
-          <div>
-            <p class="eyebrow">Character profile</p>
-            <h3>{{ character.name }}</h3>
-          </div>
+          <h3>{{ character.name }}</h3>
           <span class="character-status{% if character.dead %} is-dead{% endif %}">
             {% if character.dead %}Dead{% else %}Alive{% endif %}
           </span>
         </header>
 
         <dl class="character-facts">
+          <div><dt>Class</dt><dd>{{ character.statblock.class }}</dd></div>
+          <div><dt>Level</dt><dd>{{ character.statblock.level }}</dd></div>
+          <div><dt>Subclass</dt><dd>{{ character.statblock.subclass }}</dd></div>
           <div><dt>Folk</dt><dd>{{ character.folk }}</dd></div>
           {% if character.subfolk %}
           <div><dt>Subfolk</dt><dd>{{ character.subfolk }}</dd></div>
           {% endif %}
-          <div><dt>Class</dt><dd>{{ character.statblock.class }}{% if character.statblock.subclass %}<span class="subclass"> · {{ character.statblock.subclass }}</span>{% endif %}</dd></div>
           <div><dt>Player</dt><dd>{{ player.alias }}</dd></div>
         </dl>
 
@@ -73,11 +73,17 @@ adventure: ruins-of-azlant
           <div class="ability-scores">
           {% for attribute in character.statblock.attributes %}
             {% assign modifier = attribute[1] | minus: 10 | divided_by: 2 %}
-            <div class="ability-score">
+          <div class="ability-score{% if attribute[0] == 'luck' %} luck-score{% endif %}">
               <span>{{ attribute[0] | capitalize }}</span>
               <strong>{{ attribute[1] }}</strong>
               <small>{% if modifier >= 0 %}+{% endif %}{{ modifier }}</small>
             </div>
+          {% if forloop.index == 3 %}
+          <div class="ability-score max-hp">
+            <span>Max HP</span>
+            <strong>{{ character.statblock.max_hp }} <span class="hp-heart" aria-hidden="true">♥</span></strong>
+          </div>
+          {% endif %}
           {% endfor %}
           </div>
         </section>
@@ -94,6 +100,7 @@ adventure: ruins-of-azlant
         {% endif %}
       </div>
     </section>
-  {% endfor %}
+
+{% endfor %}
   </div>
 </fieldset>

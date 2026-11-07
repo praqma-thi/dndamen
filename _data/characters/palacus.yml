@@ -9,6 +9,8 @@ dead: false
 deaths: []
 player_id: tinidiablo
 statblock:
+  level: 2
+  max_hp: 19
   class: Warlock
   subclass: Pact of the Blade
   attributes:

@@ -9,6 +9,8 @@ dead: false
 deaths: []
 player_id: kitty
 statblock:
+  level: 2
+  max_hp: 15
   class: Wizard
   subclass: School of the Familiar
   attributes:
