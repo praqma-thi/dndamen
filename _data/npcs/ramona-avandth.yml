@@ -1,0 +1,14 @@
+id: ramona-avandth
+name: Ramona Avandth
+role: Colony Leader
+group: Colonist (2nd wave)
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/images/npcs/ramona-avandth.png
+  full: /assets/images/npcs/ramona-avandth.png
+dead: false
+description: >
+  The designated colony leader of Talmandor's Bounty.
+  She arrived on the Peregrine, expecting to assume leadership from Raylan Arkley, who would serve as her second-in-command.
+  Ramona has excellent leadership skills, and surprisingly fine bardic abilities; a fine singing voice and an appreciation for artistic talent.

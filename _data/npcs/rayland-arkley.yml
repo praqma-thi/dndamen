@@ -1,0 +1,13 @@
+id: rayland-arkley
+name: Rayland Arkley
+role: Colony Leader
+group: Colonist (1st wave)
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/images/headshot-placeholder.svg
+  full: /assets/images/headshot-placeholder.svg
+dead: false
+description: >
+  Rayland Arkley is a retired military sergeant and designated leader of the first wave of colonists.
+  He was elected as such due to his excellent discipline and leadership skills.

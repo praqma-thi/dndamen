@@ -108,7 +108,7 @@ h2 {
 
 .adventure-intro h1 {
   margin: 0 0 1rem;
-  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 700;
   line-height: 1.1;
 }
@@ -126,10 +126,10 @@ h2 {
 }
 
 .adventure-intro p {
-  max-width: 72ch;
+  max-width: 80ch;
   margin: 1.25rem auto 0;
   color: $muted;
-  font-size: 1.05rem;
+  font-size: 1.0rem;
 }
 
 .character-browser {
@@ -160,6 +160,20 @@ h2 {
   outline: none;
 }
 
+.character-pickers {
+  display: grid;
+  align-content: start;
+  gap: 1.25rem;
+  min-width: 0;
+}
+
+.picker-category h3 {
+  margin: 0 0 0.6rem;
+  color: $gold;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+}
+
 .character-picker {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -168,6 +182,21 @@ h2 {
   background: $surface;
   border: 1px solid $line;
   border-radius: 0.8rem;
+}
+
+.npc-group-divider {
+  grid-column: 1 / -1;
+  margin: 0.35rem 0 0;
+  padding: 0.35rem 0.25rem 0.2rem;
+  color: $gold;
+  border-bottom: 1px solid $line;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.npc-group-divider:first-child {
+  margin-top: 0;
 }
 
 .character-tab {
@@ -180,7 +209,7 @@ h2 {
   border-radius: 0.6rem;
   cursor: pointer;
   font: inherit;
-  font-size: 0.72rem;
+  font-size: 1rem;
   line-height: 1.25;
   overflow-wrap: anywhere;
 }
@@ -196,53 +225,13 @@ h2 {
   border-radius: 50%;
 }
 
-.character-radio:nth-of-type(1):checked ~ .character-picker .character-tab:nth-of-type(1),
-.character-radio:nth-of-type(2):checked ~ .character-picker .character-tab:nth-of-type(2),
-.character-radio:nth-of-type(3):checked ~ .character-picker .character-tab:nth-of-type(3),
-.character-radio:nth-of-type(4):checked ~ .character-picker .character-tab:nth-of-type(4),
-.character-radio:nth-of-type(5):checked ~ .character-picker .character-tab:nth-of-type(5) {
-  color: $paper;
-  background: $surface-raised;
-  border-color: $gold;
-}
-
-.character-radio:nth-of-type(1):checked ~ .character-picker .character-tab:nth-of-type(1) img,
-.character-radio:nth-of-type(2):checked ~ .character-picker .character-tab:nth-of-type(2) img,
-.character-radio:nth-of-type(3):checked ~ .character-picker .character-tab:nth-of-type(3) img,
-.character-radio:nth-of-type(4):checked ~ .character-picker .character-tab:nth-of-type(4) img,
-.character-radio:nth-of-type(5):checked ~ .character-picker .character-tab:nth-of-type(5) img {
-  border-color: $gold;
-}
-
-.character-tab:hover,
-.character-radio:nth-of-type(1):focus-visible ~ .character-picker .character-tab:nth-of-type(1),
-.character-radio:nth-of-type(2):focus-visible ~ .character-picker .character-tab:nth-of-type(2),
-.character-radio:nth-of-type(3):focus-visible ~ .character-picker .character-tab:nth-of-type(3),
-.character-radio:nth-of-type(4):focus-visible ~ .character-picker .character-tab:nth-of-type(4),
-.character-radio:nth-of-type(5):focus-visible ~ .character-picker .character-tab:nth-of-type(5) {
+.character-tab:hover {
   color: $paper;
   border-color: $gold;
-  outline: none;
-}
-
-.character-radio:nth-of-type(1):focus-visible ~ .character-picker .character-tab:nth-of-type(1),
-.character-radio:nth-of-type(2):focus-visible ~ .character-picker .character-tab:nth-of-type(2),
-.character-radio:nth-of-type(3):focus-visible ~ .character-picker .character-tab:nth-of-type(3),
-.character-radio:nth-of-type(4):focus-visible ~ .character-picker .character-tab:nth-of-type(4),
-.character-radio:nth-of-type(5):focus-visible ~ .character-picker .character-tab:nth-of-type(5) {
-  box-shadow: 0 0 0 2px $ink, 0 0 0 4px $gold;
 }
 
 .character-panel {
   display: none;
-}
-
-.character-radio:nth-of-type(1):checked ~ .character-panels .character-panel:nth-child(1),
-.character-radio:nth-of-type(2):checked ~ .character-panels .character-panel:nth-child(2),
-.character-radio:nth-of-type(3):checked ~ .character-panels .character-panel:nth-child(3),
-.character-radio:nth-of-type(4):checked ~ .character-panels .character-panel:nth-child(4),
-.character-radio:nth-of-type(5):checked ~ .character-panels .character-panel:nth-child(5) {
-  display: grid;
 }
 
 .character-panel {
@@ -329,13 +318,35 @@ h2 {
   margin: 1rem 0 1.25rem;
 }
 
+.npc-facts {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.npc-description {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  background: #141a21;
+  border: 1px solid $line;
+  border-radius: 0.5rem;
+}
+
+.npc-description h4 {
+  margin: 0 0 0.5rem;
+  color: $gold;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.npc-description p {
+  margin: 0;
+}
+
 .character-facts div {
   min-width: 0;
 }
 
 .character-facts dt {
   color: $muted;
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -364,7 +375,7 @@ h2 {
   color: $gold;
   border-bottom: 1px solid $line;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 
 .ability-scores {
@@ -386,18 +397,19 @@ h2 {
 
 .ability-score span {
   color: $muted;
-  font-size: 0.68rem;
+  font-size: 1.1rem;
 }
 
 .ability-score strong {
   color: $paper;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   line-height: 1.2;
 }
 
 .ability-score small {
   color: $gold;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
@@ -408,7 +420,7 @@ h2 {
 .ability-score.max-hp .hp-heart {
   color: #ee91ad;
   font-family: system-ui, sans-serif;
-  font-size: 0.72em;
+  font-size: 0.75em;
 }
 
 .ability-score.luck-score {

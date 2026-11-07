@@ -8,6 +8,7 @@ Content is stored as YAML in `_data/`:
 
 - `adventures.yml` stores adventure information
 - `characters/<id>.yml` stores character information
+- `npcs/<id>.yml` stores NPC names, roles, a free-form `group` label, folk/optional subfolk, art, current alive/dead status, and a description. Adventures reference NPCs by ID separately from player characters. The adventure page groups NPC picker entries by label and displays them in the shared profile panel without player stats.
 - `players.yml` maps player IDs to aliases
 
 Adventure pages live under `adventures/<slug>/` and read from the matching adventure data.
