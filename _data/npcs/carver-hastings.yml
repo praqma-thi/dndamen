@@ -7,7 +7,7 @@ subfolk: Avistani
 art:
   headshot: /assets/images/npcs/carver-hastings.png
   full: /assets/images/npcs/carver-hastings.png
-dead: false
+status: alive
 description: >
   Carver joined the colony as a guard, and has a sharp interest in ancient lore and ruins.
   Safe to say that despite his aloof and serious attitude, he seems excited to explore the isles of Azlant.

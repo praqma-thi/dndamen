@@ -5,7 +5,7 @@ subfolk: Avistani
 art:
   headshot: /assets/images/characters/seras-headshot.png
   full: /assets/images/characters/seras.png
-dead: false
+status: alive
 deaths: []
 player_id: funkyman
 statblock:

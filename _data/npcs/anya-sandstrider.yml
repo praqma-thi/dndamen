@@ -7,7 +7,7 @@ subfolk: Shoanti
 art:
   headshot: /assets/images/npcs/anya-sandstrider.png
   full: /assets/images/npcs/anya-sandstrider.png
-dead: false
+status: alive
 description: >
   Exiled from the Cinderlands, Anya has roamed the Inner Sea region since, seeking a new place to make her home.
   When a trader read her an advertisement for colonists, she applied.

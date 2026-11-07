@@ -7,7 +7,7 @@ subfolk: Mountain
 art:
   headshot: /assets/images/npcs/alba-divenvaar.png
   full: /assets/images/npcs/alba-divenvaar.png
-dead: false
+status: alive
 description: >
   Alba Divenvaar is a perennial traveller ready to finally put down roots.
   Her lifelong dream is to behold the shores of Arcadia and discover the alchemical secrets of that land.

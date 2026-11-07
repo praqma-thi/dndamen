@@ -7,7 +7,7 @@ subfolk: Avistani
 art:
   headshot: /assets/images/npcs/kurvis-nurpico.png
   full: /assets/images/npcs/kurvis-nurpico.png
-dead: false
+status: alive
 description: >
   Kurvis travels to Talmandor's Bounty to bless and sanctify it as a proper foothold of civilisation as only a servitor of Abadar can.
   He respects Eamon Caranth's emphasis on community but maintains that for community to grow, it must be built on the bedrock of law.

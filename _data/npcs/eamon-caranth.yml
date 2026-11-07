@@ -7,7 +7,7 @@ subfolk: Aiudeen
 art:
   headshot: /assets/images/npcs/eamon-caranth.png
   full: /assets/images/npcs/eamon-caranth.png
-dead: false
+status: alive
 description: >
   Eamon feels called to steer Talmandor's Bounty away from merely a fiscal enterprise and toward becoming a community where families will flourish.
   He and Kurvis Nurpico bicker like an old married couple, but despite this, they are the best of friends.

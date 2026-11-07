@@ -5,7 +5,7 @@ subfolk: Rock
 art:
   headshot: /assets/images/characters/hangry-headshot.png
   full: /assets/images/characters/hangry.png
-dead: false
+status: alive
 deaths: []
 player_id: doppie
 statblock:

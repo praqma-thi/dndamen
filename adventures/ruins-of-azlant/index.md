@@ -94,8 +94,8 @@ adventure: ruins-of-azlant
       <div class="character-summary">
         <header class="character-summary-header">
           <h3 id="character-name-{{ character.id }}">{{ character.name }}</h3>
-          <span class="character-status{% if character.dead %} is-dead{% endif %}">
-            {% if character.dead %}Dead{% else %}Alive{% endif %}
+          <span class="character-status status-{{ character.status | downcase }}">
+            {{ character.status }}
           </span>
         </header>
 
@@ -155,8 +155,8 @@ adventure: ruins-of-azlant
       <div class="character-summary">
         <header class="character-summary-header">
           <h3 id="npc-name-{{ npc.id }}">{{ npc.name }}</h3>
-          <span class="character-status{% if npc.dead %} is-dead{% endif %}">
-            {% if npc.dead %}Dead{% else %}Alive{% endif %}
+          <span class="character-status status-{{ npc.status | downcase }}">
+            {{ npc.status }}
           </span>
         </header>
 

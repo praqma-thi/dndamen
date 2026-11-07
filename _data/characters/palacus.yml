@@ -5,7 +5,7 @@ subfolk: Avistani
 art:
   headshot: /assets/images/characters/palacus-headshot.png
   full: /assets/images/characters/palacus.png
-dead: false
+status: alive
 deaths: []
 player_id: tinidiablo
 statblock:

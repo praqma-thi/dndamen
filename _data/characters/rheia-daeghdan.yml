@@ -5,7 +5,7 @@ subfolk: Avistani
 art:
   headshot: /assets/images/characters/rheia-headshot.png
   full: /assets/images/characters/rheia.png
-dead: false
+status: alive
 deaths: []
 player_id: kitty
 statblock:

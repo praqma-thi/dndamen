@@ -5,7 +5,7 @@ subfolk: Keleshite
 art:
   headshot: /assets/images/characters/subaya-headshot.png
   full: /assets/images/characters/subaya.png
-dead: false
+status: alive
 deaths: []
 player_id: shrooms
 statblock:

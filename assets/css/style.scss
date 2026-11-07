@@ -386,17 +386,25 @@ h2 {
 
 .character-status {
   padding: 0.2rem 0.6rem;
-  color: #d8e6d3;
-  background: #314538;
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.character-status.is-dead {
+.character-status.status-alive {
+  color: #d8e6d3;
+  background: #314538;
+}
+
+.character-status.status-dead {
   color: #f2d9d4;
   background: #592f2b;
+}
+
+.character-status.status-unknown {
+  color: #dedede;
+  background: #4a5058;
 }
 
 .character-facts {
