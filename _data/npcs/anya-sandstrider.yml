@@ -1,0 +1,14 @@
+id: anya-sandstrider
+name: Anya Sandstrider
+role: Skilled Hunter
+group: Colonist (2nd wave)
+folk: Human
+subfolk: Shoanti
+art:
+  headshot: /assets/images/npcs/anya-sandstrider.png
+  full: /assets/images/npcs/anya-sandstrider.png
+dead: false
+description: >
+  Exiled from the Cinderlands, Anya has roamed the Inner Sea region since, seeking a new place to make her home.
+  When a trader read her an advertisement for colonists, she applied.
+  Anya was initially rejected due to her lack of citizenship, but she undertook a series of challenges designed to gauge her skill as a hunter and naturalist and impressed the investors.

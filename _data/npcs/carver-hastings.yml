@@ -1,0 +1,13 @@
+id: carver-hastings
+name: Carver Hastings
+role: Curious Guard
+group: Colonist (2nd wave)
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/images/npcs/carver-hastings.png
+  full: /assets/images/npcs/carver-hastings.png
+dead: false
+description: >
+  Carver joined the colony as a guard, and has a sharp interest in ancient lore and ruins.
+  Safe to say that despite his aloof and serious attitude, he seems excited to explore the isles of Azlant.
