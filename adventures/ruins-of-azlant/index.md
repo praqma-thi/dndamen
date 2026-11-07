@@ -11,7 +11,10 @@ adventure: ruins-of-azlant
   <h1>{{ adventure.name }}</h1>
   <div class="adventure-overview">
     <img src="{{ adventure.logo | relative_url }}" alt="{{ adventure.name }} logo">
-    <p>{{ adventure.description }}</p>
+    <div class="adventure-overview-copy">
+      <p>{{ adventure.description }}</p>
+      <a class="session-logs-link" href="{{ '/adventures/' | append: adventure.slug | append: '/sessions/' | relative_url }}">Session logs</a>
+    </div>
   </div>
 </header>
 

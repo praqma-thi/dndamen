@@ -9,6 +9,7 @@ Content is stored as YAML in `_data/`:
 - `adventures.yml` stores adventure information
 - `characters/<id>.yml` stores player character information.
 - `npcs/<id>.yml` stores NPC information.
+- `sessions/<adventure-id>/<number>.yml` stores a session's activity log.
 - `players.yml` maps player IDs to aliases
 
 Adventure pages live under `adventures/<slug>/` and read from the matching adventure data.

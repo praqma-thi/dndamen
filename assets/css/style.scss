@@ -216,6 +216,104 @@ h2 {
   text-align: left;
 }
 
+.adventure-overview-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+}
+
+.session-logs-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.45rem 0.85rem;
+  color: $ink;
+  background: $gold;
+  border: 1px solid $gold;
+  border-radius: 0.45rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.session-logs-link:hover,
+.session-logs-link:focus-visible {
+  color: $ink;
+  background: #f0d99e;
+  border-color: #f0d99e;
+}
+
+.session-log-heading {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $line;
+}
+
+.session-log-heading .eyebrow {
+  margin: 0 0 0.25rem;
+  color: $gold;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.session-log-heading h1 {
+  margin: 0;
+  color: $gold;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.session-journal {
+  display: grid;
+  gap: 1rem;
+  max-width: 900px;
+}
+
+.session-entry {
+  padding: 1.25rem 1.5rem;
+  background: linear-gradient(145deg, #222b34, $surface 60%);
+  border: 1px solid $line;
+  border-left: 3px solid $gold;
+  border-radius: 0.6rem;
+}
+
+.session-entry-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  align-items: baseline;
+}
+
+.session-entry time {
+  color: $gold;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.session-author {
+  color: $muted;
+  font-size: 0.9rem;
+}
+
+.session-entry p {
+  margin: 0.6rem 0 0;
+  white-space: normal;
+}
+
+.session-log-empty {
+  max-width: 900px;
+  padding: 1.25rem 1.5rem;
+  color: $muted;
+  background: $surface;
+  border: 1px solid $line;
+  border-radius: 0.6rem;
+}
+
 .character-browser {
   display: grid;
   grid-template-columns: minmax(320px, 1fr) minmax(0, 1.8fr);
@@ -560,6 +658,14 @@ h2 {
 @media (max-width: 620px) {
   .adventure-overview {
     grid-template-columns: 1fr;
+  }
+
+  .adventure-overview-copy {
+    grid-template-columns: 1fr;
+  }
+
+  .session-logs-link {
+    justify-self: start;
   }
 
   .adventure-overview img {
