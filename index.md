@@ -21,6 +21,7 @@ title: Home
 <section class="changelog" aria-labelledby="changelog-title">
   <h2 id="changelog-title">Changelog</h2>
   <ul>
+    <li><strong>2026-11-08</strong> — Added gallery</li>
     <li><strong>2026-11-07</strong> — Added session logs</li>
     <li><strong>2026-11-07</strong> — Layout redesign</li>
     <li><strong>2026-11-07</strong> — Added level tracking and NPCs</li>

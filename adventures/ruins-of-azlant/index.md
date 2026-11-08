@@ -13,7 +13,10 @@ adventure: ruins-of-azlant
     <img src="{{ adventure.logo | relative_url }}" alt="{{ adventure.name }} logo">
     <div class="adventure-overview-copy">
       <p>{{ adventure.description }}</p>
-      <a class="session-logs-link" href="{{ '/adventures/' | append: adventure.slug | append: '/sessions/' | relative_url }}">Session logs</a>
+      <nav class="adventure-actions" aria-label="Adventure pages">
+        <a class="session-logs-link" href="{{ '/adventures/' | append: adventure.slug | append: '/sessions/' | relative_url }}">Session logs</a>
+        <a class="session-logs-link" href="{{ '/adventures/' | append: adventure.slug | append: '/gallery/' | relative_url }}">Gallery</a>
+      </nav>
     </div>
   </div>
 </header>

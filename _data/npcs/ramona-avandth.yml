@@ -5,8 +5,8 @@ group: Colonist (2nd wave)
 folk: Human
 subfolk: Avistani
 art:
-  headshot: /assets/images/npcs/ramona-avandth.png
-  full: /assets/images/npcs/ramona-avandth.png
+  headshot: /assets/ruins-of-azlant/images/npcs/ramona-avandth.png
+  full: /assets/ruins-of-azlant/images/npcs/ramona-avandth.png
 status: alive
 description: >
   The designated colony leader of Talmandor's Bounty.

@@ -3,8 +3,8 @@ name: Palacus
 folk: Human
 subfolk: Avistani
 art:
-  headshot: /assets/images/characters/palacus-headshot.png
-  full: /assets/images/characters/palacus.png
+  headshot: /assets/ruins-of-azlant/images/characters/palacus-headshot.png
+  full: /assets/ruins-of-azlant/images/characters/palacus.png
 status: alive
 deaths: []
 player_id: tinidiablo

@@ -3,8 +3,8 @@ name: Hangry
 folk: Gnome
 subfolk: Rock
 art:
-  headshot: /assets/images/characters/hangry-headshot.png
-  full: /assets/images/characters/hangry.png
+  headshot: /assets/ruins-of-azlant/images/characters/hangry-headshot.png
+  full: /assets/ruins-of-azlant/images/characters/hangry.png
 status: alive
 deaths: []
 player_id: doppie

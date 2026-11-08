@@ -3,8 +3,8 @@ name: Seras Breckwater
 folk: Human
 subfolk: Avistani
 art:
-  headshot: /assets/images/characters/seras-headshot.png
-  full: /assets/images/characters/seras.png
+  headshot: /assets/ruins-of-azlant/images/characters/seras-headshot.png
+  full: /assets/ruins-of-azlant/images/characters/seras.png
 status: alive
 deaths: []
 player_id: funkyman

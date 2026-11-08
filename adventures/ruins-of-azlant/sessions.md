@@ -11,6 +11,7 @@ permalink: /adventures/ruins-of-azlant/sessions/
 <header class="session-log-heading">
   <p class="eyebrow">{{ adventure.name }}</p>
   <h1>Session Logs</h1>
+  <a class="adventure-return" href="{{ '/adventures/' | append: adventure.slug | append: '/' | relative_url }}">← Return to adventure</a>
 </header>
 
 {% if log_count > 0 %}

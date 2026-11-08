@@ -5,8 +5,8 @@ group: Colonist (2nd wave)
 folk: Aiuvarin
 subfolk: Aiudeen
 art:
-  headshot: /assets/images/npcs/eamon-caranth.png
-  full: /assets/images/npcs/eamon-caranth.png
+  headshot: /assets/ruins-of-azlant/images/npcs/eamon-caranth.png
+  full: /assets/ruins-of-azlant/images/npcs/eamon-caranth.png
 status: alive
 description: >
   Eamon feels called to steer Talmandor's Bounty away from merely a fiscal enterprise and toward becoming a community where families will flourish.

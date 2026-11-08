@@ -3,8 +3,8 @@ name: Rheia Daeghdan
 folk: Human
 subfolk: Avistani
 art:
-  headshot: /assets/images/characters/rheia-headshot.png
-  full: /assets/images/characters/rheia.png
+  headshot: /assets/ruins-of-azlant/images/characters/rheia-headshot.png
+  full: /assets/ruins-of-azlant/images/characters/rheia.png
 status: alive
 deaths: []
 player_id: kitty

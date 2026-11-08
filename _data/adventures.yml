@@ -1,6 +1,6 @@
 - slug: ruins-of-azlant
   name: Ruins of Azlant
-  logo: /assets/images/ruins-of-azlant.png
+  logo: /assets/ruins-of-azlant/images/ruins-of-azlant.png
   description: >
     Thousands of years ago, a barrage of meteors rained down on Golarion, cutting short the remarkable human empire of Azlant while plunging the world into an era of darkness.
     Since then, the shattered continent of Azlant has lured intrepid explorers to its broken shores, but few have the mettle to survive in the remains of this dangerous and mysterious land.
@@ -19,3 +19,22 @@
     - eamon-caranth
     - kurvis-nurpico
     - rayland-arkley
+  art-gallery:
+    - image: "/assets/ruins-of-azlant/images/gallery/hangry.png"
+      artist: "Doppie"
+      title: "Hangry"
+    - image: "/assets/ruins-of-azlant/images/gallery/hangry-catch.png"
+      artist: "Doppie"
+      title: "Clockwork Capture"
+    - image: "/assets/ruins-of-azlant/images/gallery/subaya.png"
+      artist: "Damen"
+      title: "Subaya"
+    - image: "/assets/ruins-of-azlant/images/gallery/rheia.png"
+      artist: "Damen"
+      title: "Rheia"
+    - image: "/assets/ruins-of-azlant/images/gallery/hangry-prowl.png"
+      artist: "Doppie"
+      title: "Hangry prowls"
+    - image: "/assets/ruins-of-azlant/images/gallery/rheia-cast.jpg"
+      artist: "Damen"
+      title: "Rheia"

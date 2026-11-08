@@ -5,8 +5,8 @@ group: Colonist (2nd wave)
 folk: Human
 subfolk: Avistani
 art:
-  headshot: /assets/images/npcs/carver-hastings.png
-  full: /assets/images/npcs/carver-hastings.png
+  headshot: /assets/ruins-of-azlant/images/npcs/carver-hastings.png
+  full: /assets/ruins-of-azlant/images/npcs/carver-hastings.png
 status: alive
 description: >
   Carver joined the colony as a guard, and has a sharp interest in ancient lore and ruins.

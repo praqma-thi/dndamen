@@ -3,8 +3,8 @@ name: Merit Subaya
 folk: Human
 subfolk: Keleshite
 art:
-  headshot: /assets/images/characters/subaya-headshot.png
-  full: /assets/images/characters/subaya.png
+  headshot: /assets/ruins-of-azlant/images/characters/subaya-headshot.png
+  full: /assets/ruins-of-azlant/images/characters/subaya.png
 status: alive
 deaths: []
 player_id: shrooms

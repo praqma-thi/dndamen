@@ -5,8 +5,8 @@ group: Colonist (2nd wave)
 folk: Human
 subfolk: Avistani
 art:
-  headshot: /assets/images/npcs/kurvis-nurpico.png
-  full: /assets/images/npcs/kurvis-nurpico.png
+  headshot: /assets/ruins-of-azlant/images/npcs/kurvis-nurpico.png
+  full: /assets/ruins-of-azlant/images/npcs/kurvis-nurpico.png
 status: alive
 description: >
   Kurvis travels to Talmandor's Bounty to bless and sanctify it as a proper foothold of civilisation as only a servitor of Abadar can.

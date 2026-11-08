@@ -5,8 +5,8 @@ group: Colonist (2nd wave)
 folk: Dwarf
 subfolk: Mountain
 art:
-  headshot: /assets/images/npcs/alba-divenvaar.png
-  full: /assets/images/npcs/alba-divenvaar.png
+  headshot: /assets/ruins-of-azlant/images/npcs/alba-divenvaar.png
+  full: /assets/ruins-of-azlant/images/npcs/alba-divenvaar.png
 status: alive
 description: >
   Alba Divenvaar is a perennial traveller ready to finally put down roots.
