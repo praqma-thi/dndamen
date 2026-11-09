@@ -1,0 +1,17 @@
+image: /assets/ruins-of-azlant/images/map.png
+locations:
+  - name: Talmandor's Bounty
+    description: A colony jointly governed by Andoran and the Bountiful Venture Company. Your new home.
+    x: 65.8
+    y: 38.5
+    symbol: "🏘️"
+  - name: Extraction Point
+    description: The designated extraction point for colonists to gather in case of danger.
+    x: 47.2
+    y: 25.5
+    symbol: "📍"
+  - name: Almas
+    description: Capital of Andoran, a six weeks voyage away.
+    x: 92.0
+    y: 53.0
+    symbol: "➜"

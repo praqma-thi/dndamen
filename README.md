@@ -6,11 +6,12 @@ A small Jekyll site for keeping track of our adventures.
 
 Content is stored as YAML in `_data/`:
 
+- `players.yml` maps player IDs to aliases
 - `adventures.yml` stores adventure information; characters, NPCs, session logs and image gallery.
 - `characters/<id>.yml` stores player character information.
 - `npcs/<id>.yml` stores NPC information.
 - `sessions/<adventure-id>/<number>.yml` stores a session's activity log.
-- `players.yml` maps player IDs to aliases
+- `maps/<adventure-id>.yml` stores a map image and location information.
 
 Adventure-specific pages live under `adventures/<slug>/`.
 Adventure-specific artwork belongs in `assets/<adventure-id>/images/`.
