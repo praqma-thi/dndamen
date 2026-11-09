@@ -122,14 +122,17 @@ adventure: ruins-of-azlant
           <div class="ability-scores">
           {% for attribute in character.statblock.attributes %}
             {% assign modifier = attribute[1] | minus: 10 | divided_by: 2 %}
+            {% assign ability_short = attribute[0] | slice: 0, 3 | upcase %}
+            {% if attribute[0] == 'luck' %}{% assign ability_short = 'LUK' %}{% endif %}
             <div class="ability-score{% if attribute[0] == 'luck' %} luck-score{% endif %}">
-              <span>{{ attribute[0] | capitalize }}</span>
+              <span class="ability-name-full visually-hidden-on-small">{{ attribute[0] | capitalize }}</span>
+              <span class="ability-name-short" aria-hidden="true">{{ ability_short }}</span>
               <strong>{{ attribute[1] }}</strong>
               <small>{% if modifier >= 0 %}+{% endif %}{{ modifier }}</small>
             </div>
             {% if forloop.index == 3 %}
             <div class="ability-score max-hp">
-              <span>Max HP</span>
+              <span>HP</span>
               <strong>{{ character.statblock.max_hp }} <span class="hp-heart" aria-hidden="true">♥</span></strong>
             </div>
             {% endif %}
