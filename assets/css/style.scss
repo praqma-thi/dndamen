@@ -62,18 +62,20 @@ a:focus-visible {
 }
 
 .topbar-adventures,
-.topbar-database {
+.topbar-database,
+.topbar-links {
   position: relative;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.topbar-database {
+.topbar-links {
   margin-right: auto;
 }
 
 .topbar-adventures summary,
-.topbar-database summary {
+.topbar-database summary,
+.topbar-links summary {
   color: $paper;
   cursor: pointer;
   list-style-position: inside;
@@ -83,12 +85,15 @@ a:focus-visible {
 .topbar-adventures summary:hover,
 .topbar-adventures summary:focus-visible,
 .topbar-database summary:hover,
-.topbar-database summary:focus-visible {
+.topbar-database summary:focus-visible,
+.topbar-links summary:hover,
+.topbar-links summary:focus-visible {
   color: $gold;
 }
 
 .topbar-adventures summary::marker,
-.topbar-database summary::marker {
+.topbar-database summary::marker,
+.topbar-links summary::marker {
   color: $gold;
 }
 
