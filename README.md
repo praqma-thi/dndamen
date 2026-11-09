@@ -17,6 +17,12 @@ Content is stored as YAML in `_data/`:
 Adventure-specific pages live under `adventures/<slug>/`.
 Adventure-specific artwork belongs in `assets/<adventure-id>/images/`.
 
+### RoA specific
+
+- `ruins-of-azlant/colony/<category>.yml` stores colony buildings and prerequisites
+- `ruins-of-azlant/colony/state.yml` stores constructed building IDs and fixed bonuses.
+  - (_Bonus of Choice_ needs to be added as a fixed bonus for now.)
+
 ## Run locally with Docker
 
 Build the image and start the Jekyll server:
@@ -26,4 +32,4 @@ docker build -t dndamen .
 docker run --rm -p 4000:4000 -v "$PWD:/site" dndamen
 ```
 
-Open [http://localhost:4000](http://localhost:4000). The source directory is mounted into the container, so Jekyll rebuilds the site as files change. `_config.yml` sets `baseurl` to `/dndamen` for the GitHub Pages project site; the Docker server overrides it to keep local URLs rooted at `localhost:4000`.
+Open [http://localhost:4000](http://localhost:4000).

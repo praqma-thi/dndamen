@@ -16,6 +16,7 @@ adventure: ruins-of-azlant
       <nav class="adventure-actions" aria-label="Adventure pages">
         <a class="session-logs-link" href="{{ '/adventures/' | append: adventure.slug | append: '/map/' | relative_url }}">Map</a>
         <a class="session-logs-link" href="{{ '/adventures/' | append: adventure.slug | append: '/sessions/' | relative_url }}">Session logs</a>
+        <a class="session-logs-link" href="{{ '/adventures/' | append: adventure.slug | append: '/colony/' | relative_url }}">Colony</a>
         <a class="session-logs-link" href="{{ '/adventures/' | append: adventure.slug | append: '/gallery/' | relative_url }}">Gallery</a>
       </nav>
     </div>

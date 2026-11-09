@@ -1,0 +1,14 @@
+- id: agriculture
+  name: Agriculture
+- id: culture
+  name: Culture
+- id: defence
+  name: Defence
+- id: health
+  name: Health
+- id: magic
+  name: Magic
+- id: religion
+  name: Religion
+- id: trade
+  name: Trade

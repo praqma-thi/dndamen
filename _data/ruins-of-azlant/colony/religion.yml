@@ -1,0 +1,79 @@
+- id: altar
+  name: Altar
+  tier: 0
+  cost: 4
+  description: Proper place of worship.
+  bonuses:
+    religion: 1
+- id: reliquary
+  name: Reliquary
+  tier: 1
+  cost: 6
+  description: Stores religious artefacts.
+  requires:
+    - altar
+  bonuses:
+    religion: 2
+- id: ceremonial-room
+  name: Ceremonial room
+  tier: 1
+  cost: 6
+  description: Decorated space for religious rituals.
+  requires:
+    - altar
+  bonuses:
+    religion: 1
+    culture: 1
+- id: sanctification-pool
+  name: Sanctification pool
+  tier: 2
+  cost: 12
+  description: Nexus of power for cleansing and enhancing.
+  requires:
+    - ceremonial-room
+  bonuses:
+    religion: 2
+    magic: 2
+- id: house-of-healing
+  name: House of healing
+  tier: 0
+  cost: 6
+  description: Provides succor for those in dire need.
+  bonuses:
+    religion: 1
+    health: 1
+- id: burial-ground
+  name: Burial Ground
+  tier: 0
+  cost: 4
+  description: Internment for those that have passed.
+  bonuses:
+    religion: 1
+- id: crypt
+  name: Crypt
+  tier: 1
+  cost: 6
+  description: Facilitates preservation and purification of the deceased.
+  requires:
+    - burial-ground
+  bonuses:
+    religion: 1
+    magic: 1
+- id: shrine
+  name: Shrine
+  tier: 0
+  cost: 6
+  description: Dedicated to a specific deity.
+  bonuses:
+    religion: 1
+    choice: 1
+- id: consecrated-ground
+  name: Consecrated ground
+  tier: 1
+  cost: 6
+  description: Sanctified area of worship.
+  requires:
+    - shrine
+  bonuses:
+    religion: 1
+    magic: 1

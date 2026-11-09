@@ -1,0 +1,80 @@
+- id: infirmary
+  name: Infirmary
+  tier: 0
+  cost: 4
+  description: Supports the injured and ill.
+  bonuses:
+    health: 1
+- id: apothecary
+  name: Apothecary
+  tier: 1
+  cost: 6
+  description: Processes, stores and distributes various curatives.
+  requires:
+    - infirmary
+  bonuses:
+    health: 2
+- id: nursery
+  name: Nursery
+  tier: 1
+  cost: 6
+  description: Tends to the next generation.
+  requires:
+    - infirmary
+  bonuses:
+    health: 1
+    culture: 1
+- id: waterworks
+  name: Waterworks
+  tier: 0
+  cost: 12
+  description: Series of pumps, cisterns and distribution systems.
+  bonuses:
+    health: 2
+    agriculture: 2
+- id: baths
+  name: Baths
+  tier: 1
+  cost: 6
+  description: Hot, soapy water for everyone to cleanse and soak.
+  requires:
+    - waterworks
+  bonuses:
+    health: 1
+    culture: 1
+- id: sauna
+  name: Sauna
+  tier: 2
+  cost: 12
+  description: The pinnacle of health and relaxation. Cold bath included.
+  requires:
+    - baths
+  bonuses:
+    health: 2
+    culture: 2
+- id: laundry
+  name: Laundry
+  tier: 1
+  cost: 6
+  description: Cleaning services for fabrics, leathers and more.
+  requires:
+    - waterworks
+  bonuses:
+    health: 2
+- id: lavatory
+  name: Lavatory
+  tier: 0
+  cost: 4
+  description: Humble private room for private business. Fragrant herb included.
+  bonuses:
+    health: 1
+- id: sewer-system
+  name: Sewer system
+  tier: 1
+  cost: 12
+  description: High-tech waste disposal for the entire community.
+  requires:
+    - lavatory
+    - waterworks
+  bonuses:
+    health: 4

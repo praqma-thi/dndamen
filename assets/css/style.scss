@@ -602,6 +602,253 @@ h2 {
   color: $muted;
 }
 
+.colony-heading {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $line;
+}
+
+.colony-heading .eyebrow {
+  margin: 0 0 0.25rem;
+  color: $gold;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.colony-heading h1 {
+  margin: 0 0 0.5rem;
+  color: $gold;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.colony-bonuses {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.2rem;
+  background: $surface;
+  border: 1px solid $line;
+  border-radius: 0.6rem;
+}
+
+.colony-bonuses h2 {
+  margin: 0 0 0.75rem;
+  color: $gold;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+}
+
+.colony-bonuses dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.colony-bonuses dl > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.4rem 0.55rem;
+  background: $ink;
+  border-radius: 0.35rem;
+}
+
+.colony-bonuses dt {
+  color: $muted;
+}
+
+.colony-bonuses dd {
+  margin: 0;
+  color: $gold;
+  font-weight: 700;
+}
+
+.colony-tabs {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.colony-tab-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.colony-tab-list {
+  display: flex;
+  gap: 0.3rem;
+  overflow-x: auto;
+  border-bottom: 1px solid $line;
+}
+
+.colony-tab-label {
+  flex: 0 0 auto;
+  padding: 0.55rem 0.8rem;
+  color: $muted;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.colony-tab-label:hover {
+  color: $paper;
+}
+
+.colony-panels {
+  padding-top: 1.25rem;
+}
+
+.colony-panel {
+  display: none;
+}
+
+.colony-tier + .colony-tier {
+  margin-top: 1.25rem;
+}
+
+.colony-tier > h3 {
+  margin: 0 0 0.65rem;
+  padding-bottom: 0.3rem;
+  color: $gold;
+  border-bottom: 1px solid $line;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+}
+
+.colony-building-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 0.75rem;
+}
+
+.colony-building {
+  min-width: 0;
+  padding: 0.9rem 1rem;
+  background: $surface;
+  border: 1px solid $line;
+  border-left: 3px solid $muted;
+  border-radius: 0.5rem;
+}
+
+.colony-building-constructed {
+  background: #1b2b29;
+  border-color: #527b65;
+  border-left-color: #7bc49b;
+}
+
+.colony-building-eligible {
+  border-left-color: $gold;
+}
+
+.colony-building-locked {
+  color: $muted;
+  background: #151a20;
+  border-left-color: #666b70;
+}
+
+.colony-building-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.colony-building-header h4 {
+  margin: 0;
+  color: $paper;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+}
+
+.colony-building-constructed .colony-building-header h4 {
+  color: #a4d8b8;
+}
+
+.colony-building-status {
+  color: $muted;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.colony-building-constructed .colony-building-status {
+  color: #a4d8b8;
+}
+
+.colony-building-eligible .colony-building-status {
+  color: $gold;
+}
+
+.colony-building-cost {
+  margin: 0.25rem 0 0;
+  color: $gold;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.colony-building > p:not(.colony-building-cost, .colony-requirements) {
+  margin: 0.5rem 0;
+  color: $paper;
+}
+
+.colony-building-bonuses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.colony-building-bonuses li {
+  padding: 0.1rem 0.45rem;
+  color: $muted;
+  background: $ink;
+  border: 1px solid $line;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.colony-requirements {
+  margin: 0.6rem 0 0;
+  padding-top: 0.5rem;
+  color: $muted;
+  border-top: 1px solid $line;
+  font-size: 0.8rem;
+}
+
+.colony-building-locked .colony-requirements {
+  color: #C2A1AA;
+}
+
+{% assign colony_categories = site.data["ruins-of-azlant"].colony.categories %}
+{% for category in colony_categories %}
+#colony-tab-{{ category.id }}:checked ~ .colony-tab-list label[for="colony-tab-{{ category.id }}"] {
+  color: $gold;
+  border-bottom-color: $gold;
+}
+
+#colony-tab-{{ category.id }}:focus-visible ~ .colony-tab-list label[for="colony-tab-{{ category.id }}"] {
+  outline: 2px solid $gold;
+  outline-offset: -2px;
+}
+
+#colony-tab-{{ category.id }}:checked ~ .colony-panels #colony-panel-{{ category.id }} {
+  display: block;
+}
+{% endfor %}
+
 .item-page-heading {
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;

@@ -1,0 +1,85 @@
+- id: book-repository
+  name: Book repository
+  tier: 0
+  cost: 4
+  description: Carefully stores tomes and manuscripts.
+  bonuses:
+    magic: 1
+- id: scriptorium
+  name: Scriptorium
+  tier: 1
+  cost: 6
+  description: All the supplies and silence necessary for scribing.
+  requires:
+    - book-repository
+  bonuses:
+    magic: 1
+    religion: 1
+- id: classroom
+  name: Classroom
+  tier: 1
+  cost: 6
+  description: Educates visitors of all ages.
+  requires:
+    - book-repository
+  bonuses:
+    magic: 1
+    culture: 1
+- id: sanctum
+  name: Sanctum
+  tier: 0
+  cost: 6
+  description: Core magic facility.
+  bonuses:
+    magic: 2
+- id: magic-repository
+  name: Magic repository
+  tier: 1
+  cost: 6
+  description: Safely stores arcane and occult artefacts.
+  requires:
+    - sanctum
+  bonuses:
+    magic: 2
+- id: enchanting-forge
+  name: Enchanting forge
+  tier: 2
+  cost: 12
+  description: Allows for imbuing items with various enchantments.
+  requires:
+    - magic-repository
+    - mill-room
+  bonuses:
+    magic: 2
+    trade: 2
+- id: observation-dome
+  name: Observation dome
+  tier: 1
+  cost: 6
+  description: Tracks celestial bodies and patterns.
+  requires:
+    - sanctum
+  bonuses:
+    magic: 1
+    religion: 1
+- id: scrying-room
+  name: Scrying room
+  tier: 2
+  cost: 12
+  description: Facilitates divining and scrying magic.
+  requires:
+    - observation-dome
+  bonuses:
+    magic: 2
+    religion: 1
+    defence: 1
+- id: conjuration-chamber
+  name: Conjuration chamber
+  tier: 1
+  cost: 12
+  description: Supports summoning and conjuration magic.
+  requires:
+    - sanctum
+  bonuses:
+    magic: 2
+    defence: 2
