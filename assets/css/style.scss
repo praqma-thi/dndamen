@@ -61,14 +61,88 @@ a:focus-visible {
   color: $gold;
 }
 
-.topbar-home {
+.topbar-adventures {
+  position: relative;
+  margin-right: auto;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
+.topbar-adventures summary {
+  color: $paper;
+  cursor: pointer;
+  list-style-position: inside;
+  white-space: nowrap;
+}
+
+.topbar-adventures summary:hover,
+.topbar-adventures summary:focus-visible {
+  color: $gold;
+}
+
+.topbar-adventures summary::marker {
+  color: $gold;
+}
+
+.adventure-nav-panel {
+  position: absolute;
+  z-index: 1;
+  top: calc(100% + 1.15rem);
+  left: 0;
+  width: min(22rem, calc(100vw - 2.5rem));
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+  padding: 0.35rem 0.6rem;
+  background: #11161df5;
+  border: 1px solid $line;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.75rem 1.5rem #0009;
+  backdrop-filter: blur(12px);
+}
+
+.adventure-nav-group + .adventure-nav-group {
+  border-top: 1px solid $line;
+}
+
+.adventure-nav-group {
+  padding: 0.45rem 0.15rem;
+}
+
+.adventure-nav-name {
+  display: inline-block;
+  color: $gold;
+  font-weight: 700;
+}
+
+.adventure-nav-links {
+  margin: 0.15rem 0 0;
+  padding-left: 1.35rem;
+  color: $muted;
+  list-style: disc;
+}
+
+.adventure-nav-links li::marker {
+  color: $gold;
+}
+
+.adventure-nav-links a {
+  display: inline-block;
+  padding: 0.1rem 0.25rem;
+  color: $muted;
+  border-radius: 0.3rem;
+  font-size: 0.85rem;
+}
+
+.adventure-nav-links a:hover,
+.adventure-nav-links a:focus-visible {
+  color: $gold;
+  background: $surface-raised;
+}
+
 .topbar-title {
-  margin-left: auto;
+  padding-right: 0.75rem;
   color: $gold !important;
+  border-right: 1px solid $gold;
   font-family: Georgia, serif;
   font-size: 1.15rem;
   font-weight: 700;

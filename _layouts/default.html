@@ -8,10 +8,24 @@
   </head>
   <body>
     <header class="topbar">
-      {% unless page.url == "/" %}
-      <a class="topbar-home" href="{{ '/' | relative_url }}">← Home</a>
-      {% endunless %}
       <a class="topbar-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <nav class="topbar-adventures" aria-label="Adventure navigation">
+        <details>
+          <summary>Adventures</summary>
+          <div class="adventure-nav-panel">
+            {% for adventure in site.data.adventures %}
+            <section class="adventure-nav-group">
+              <a class="adventure-nav-name" href="{{ '/adventures/' | append: adventure.slug | append: '/' | relative_url }}">{{ adventure.name | escape }}</a>
+              <ul class="adventure-nav-links">
+                <li><a href="{{ '/adventures/' | append: adventure.slug | append: '/map/' | relative_url }}">Map</a></li>
+                <li><a href="{{ '/adventures/' | append: adventure.slug | append: '/sessions/' | relative_url }}">Session logs</a></li>
+                <li><a href="{{ '/adventures/' | append: adventure.slug | append: '/gallery/' | relative_url }}">Gallery</a></li>
+              </ul>
+            </section>
+            {% endfor %}
+          </div>
+        </details>
+      </nav>
     </header>
     <main class="content">
       {{ content }}
