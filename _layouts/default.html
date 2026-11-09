@@ -12,7 +12,7 @@
       <nav class="topbar-adventures" aria-label="Adventure navigation">
         <details>
           <summary>Adventures</summary>
-          <div class="adventure-nav-panel">
+          <div class="topbar-dropdown-panel">
             {% for adventure in site.data.adventures %}
             <section class="adventure-nav-group">
               <a class="adventure-nav-name" href="{{ '/adventures/' | append: adventure.slug | append: '/' | relative_url }}">{{ adventure.name | escape }}</a>
@@ -23,6 +23,16 @@
               </ul>
             </section>
             {% endfor %}
+          </div>
+        </details>
+      </nav>
+      <nav class="topbar-database" aria-label="Database navigation">
+        <details>
+          <summary>Database</summary>
+          <div class="topbar-dropdown-panel">
+            <ul class="adventure-nav-links">
+              <li><a href="{{ '/database/items/' | relative_url }}">Items</a></li>
+            </ul>
           </div>
         </details>
       </nav>

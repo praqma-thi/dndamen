@@ -1,0 +1,64 @@
+- id: quickrunner-shirt
+  name: Quickrunner Shirt
+  description: |
+    *Wondrous item, uncommon*
+
+    This shirt is made of light, gossamer-thin fabric embroidered with arrangements of winged feet.
+
+    **Quick Step.** Once per long rest, you can use a bonus action to gain an additional 30 feet of movement this turn. This movement does not provoke opportunity attacks.
+  tags:
+    - wondrous item
+- id: wand-of-magic-missiles
+  name: Wand of Magic Missiles
+  description: |
+    *Wand, uncommon*
+
+    This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the *Magic Missile* spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.
+
+    The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
+
+    **Magic Missile.** You create three glowing darts of magical force. Each dart strikes a creature of your choice that you can see within 120 feet. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.
+
+    **Using a Higher-Level Spell Slot.** The spell creates one more dart for each spell slot level above 1.
+  tags:
+    - wand
+- id: wand-of-goodberry
+  name: Wand of Goodberry
+  description: |
+    *Wand, uncommon*
+
+    This wand has 50 charges. While holding it, you can use an action to expend 1 of its charges to cast the *Goodberry* spell from it.
+
+    If you expend the wand's last charge, it crumbles to dust and is destroyed.
+
+    **Goodberry.** Up to ten berries appear in your hand and are infused with magic for 24 hours. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day.
+  tags:
+    - wand
+- id: shining-longsword
+  name: Shining Longsword
+  description: |
+    *Weapon (longsword), uncommon (requires attunement)*
+
+    This beautiful, straight blade has a grip wrapped in green leather and gold wire. It shines with a pale emerald light.
+
+    You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
+
+    When unsheathed, this sword sheds bright emerald light in a 20-foot radius and dim light for an additional 20 feet.
+  tags:
+    - weapon
+- id: talisman-of-good-fortune
+  name: Talisman of Good Fortune
+  description: |
+    *Wondrous item, uncommon (requires attunement)*
+
+    This polished hematite talisman with malachite adornments emanates a gentle warmth.
+
+    **Luck.** The first time you roll a natural 1 on a d20 roll each day, roll again and take the new result instead.
+  tags:
+    - wondrous item
+- id: parrying-buckler
+  name: Parrying Buckler
+  description: |
+    While wielding this buckler, you gain a +1 bonus to AC. When a creature makes a melee attack roll against you, you can use your reaction to roll 1d4 and add the number rolled to your AC for that attack.
+  tags:
+    - shield
