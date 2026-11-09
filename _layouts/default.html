@@ -11,7 +11,7 @@
     <header class="topbar">
       <a class="topbar-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       <nav class="topbar-adventures" aria-label="Adventure navigation">
-        <details>
+        <details name="topbar-menus">
           <summary>Adventures</summary>
           <div class="topbar-dropdown-panel">
             {% for adventure in site.data.adventures %}
@@ -28,7 +28,7 @@
         </details>
       </nav>
       <nav class="topbar-database" aria-label="Database navigation">
-        <details>
+        <details name="topbar-menus">
           <summary>Database</summary>
           <div class="topbar-dropdown-panel">
             <ul class="adventure-nav-links">
@@ -38,7 +38,7 @@
         </details>
       </nav>
       <nav class="topbar-links" aria-label="External links">
-        <details>
+        <details name="topbar-menus">
           <summary>Links</summary>
           <div class="topbar-dropdown-panel">
             <ul class="adventure-nav-links">

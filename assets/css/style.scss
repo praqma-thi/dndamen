@@ -122,7 +122,8 @@ a:focus-visible {
 }
 
 .adventure-nav-name {
-  display: inline-block;
+  display: block;
+  padding: 0.1rem 0.25rem;
   color: $gold;
   font-weight: 700;
 }
@@ -139,7 +140,8 @@ a:focus-visible {
 }
 
 .adventure-nav-links a {
-  display: inline-block;
+  display: block;
+  width: 100%;
   padding: 0.1rem 0.25rem;
   color: $muted;
   border-radius: 0.3rem;
