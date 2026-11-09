@@ -1254,10 +1254,6 @@ h2 {
   font-size: 1.1rem;
 }
 
-.ability-score .ability-name-short {
-  display: none;
-}
-
 .ability-score strong {
   color: $paper;
   font-family: Georgia, "Times New Roman", serif;
@@ -1320,22 +1316,6 @@ h2 {
 }
 
 @media (max-width: 620px) {
-  .visually-hidden-on-small {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  .ability-score .ability-name-short {
-    display: inline;
-  }
-
   .adventure-overview {
     grid-template-columns: 1fr;
   }
