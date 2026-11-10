@@ -17,12 +17,6 @@ Content is stored as YAML in `_data/`:
 Adventure-specific pages live under `adventures/<slug>/`.
 Adventure-specific artwork belongs in `assets/<adventure-id>/images/`.
 
-### RoA specific
-
-- `ruins-of-azlant/colony/<category>.yml` stores colony buildings and prerequisites
-- `ruins-of-azlant/colony/state.yml` stores constructed building IDs and fixed bonuses.
-  - (_Bonus of Choice_ needs to be added as a fixed bonus for now.)
-
 ## Run locally with Docker
 
 Build the image and start the Jekyll server:
