@@ -1,0 +1,23 @@
+id: kaela-vol
+name: Kaela Vol
+folk: Genasi
+subfolk: Fire
+art:
+  headshot: /assets/rise-of-the-runelords/images/characters/kaela-headshot.png
+  full: /assets/rise-of-the-runelords/images/characters/kaela.png
+status: alive
+deaths: []
+player_id: damen
+statblock:
+  level: 5
+  max_hp: 28
+  class: Wizard
+  subclass: Enchantment
+  attributes:
+    strength: 8
+    dexterity: 10
+    constitution: 12
+    intelligence: 18
+    wisdom: 10
+    charisma: 12
+    luck: 6

@@ -1,0 +1,10 @@
+id: pepparkorn
+name: Pepparkorn
+role: Clever Horse
+group: Companions
+folk: Horse
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/pepparkorn-headshot.png
+  full: /assets/rise-of-the-runelords/images/npcs/pepparkorn.png
+status: alive
+description: Einar's incredibly intelligent horse companion, now seemingly following Kaela.

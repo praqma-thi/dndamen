@@ -1,0 +1,23 @@
+id: tiff-twigeye
+name: Tiff Twigeye
+folk: Beastfolk
+subfolk: Kunek
+art:
+  headshot: /assets/rise-of-the-runelords/images/characters/tiff-headshot.png
+  full: /assets/rise-of-the-runelords/images/characters/tiff.png
+status: alive
+deaths: []
+player_id: damen
+statblock:
+  level: 5
+  max_hp: 53
+  class: Ranger
+  subclass: Freerunner
+  attributes:
+    strength: 6
+    dexterity: 16
+    constitution: 16
+    intelligence: 12
+    wisdom: 16
+    charisma: 10
+    luck: 14

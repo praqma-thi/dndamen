@@ -12,7 +12,7 @@ statblock:
   level: 2
   max_hp: 15
   class: Wizard
-  subclass: School of the Familiar
+  subclass: Familiar
   attributes:
     strength: 12
     dexterity: 15

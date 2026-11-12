@@ -93,17 +93,16 @@
       class="character-panel"
       id="character-panel-{{ character.id }}"
       aria-labelledby="character-name-{{ character.id }}">
+      <header class="character-summary-header">
+        <h3 id="character-name-{{ character.id }}">{{ character.name }}</h3>
+        <span class="character-status status-{{ character.status | downcase }}">
+          {{ character.status }}
+        </span>
+      </header>
       <div class="character-art-frame">
         <img class="character-full-art" src="{{ character.art.full | relative_url }}" alt="{{ character.name }} full character art">
       </div>
       <div class="character-summary">
-        <header class="character-summary-header">
-          <h3 id="character-name-{{ character.id }}">{{ character.name }}</h3>
-          <span class="character-status status-{{ character.status | downcase }}">
-            {{ character.status }}
-          </span>
-        </header>
-
         <dl class="character-facts">
           <div><dt>Class</dt><dd>{{ character.statblock.class }}</dd></div>
           <div><dt>Subclass</dt><dd>{{ character.statblock.subclass }}</dd></div>
@@ -156,17 +155,16 @@
       class="character-panel npc-panel"
       id="npc-panel-{{ npc.id }}"
       aria-labelledby="npc-name-{{ npc.id }}">
+      <header class="character-summary-header">
+        <h3 id="npc-name-{{ npc.id }}">{{ npc.name }}</h3>
+        <span class="character-status status-{{ npc.status | downcase }}">
+          {{ npc.status }}
+        </span>
+      </header>
       <div class="character-art-frame">
         <img class="character-full-art" src="{{ npc.art.full | relative_url }}" alt="{{ npc.name }} full character art">
       </div>
       <div class="character-summary">
-        <header class="character-summary-header">
-          <h3 id="npc-name-{{ npc.id }}">{{ npc.name }}</h3>
-          <span class="character-status status-{{ npc.status | downcase }}">
-            {{ npc.status }}
-          </span>
-        </header>
-
         <dl class="character-facts npc-facts">
           <div><dt>Folk</dt><dd>{{ npc.folk }}</dd></div>
           {% if npc.subfolk %}

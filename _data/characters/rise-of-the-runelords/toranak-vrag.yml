@@ -1,0 +1,22 @@
+id: toranak-vrag
+name: Toranak Vrag
+folk: Half-orc
+art:
+  headshot: /assets/rise-of-the-runelords/images/characters/toranak-headshot.png
+  full: /assets/rise-of-the-runelords/images/characters/toranak.png
+status: alive
+deaths: []
+player_id: meatjelly
+statblock:
+  level: 5
+  max_hp: 10
+  class: Paladin
+  subclass: Oath of the Ancients
+  attributes:
+    strength: 10
+    dexterity: 10
+    constitution: 10
+    intelligence: 10
+    wisdom: 10
+    charisma: 10
+    luck: 10

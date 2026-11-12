@@ -1,0 +1,10 @@
+id: inny
+name: Inny
+role: Fey Familiar
+group: Companions
+folk: Fey
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/inny-headshot.png
+  full: /assets/rise-of-the-runelords/images/npcs/inny.png
+status: alive
+description: Kaela's fey familiar, often in the shape of a cat.

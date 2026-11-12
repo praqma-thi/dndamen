@@ -1,0 +1,25 @@
+id: dimeon-carmei
+name: Dimeon Carmei
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/rise-of-the-runelords/images/characters/dimeon-headshot.png
+  full: /assets/rise-of-the-runelords/images/characters/dimeon.png
+status: alive
+deaths:
+  - level: 2
+    killer: Erylium (quasit)
+player_id: spek
+statblock:
+  level: 5
+  max_hp: 10
+  class: Rogue
+  subclass: Arcane Trickster
+  attributes:
+    strength: 10
+    dexterity: 10
+    constitution: 10
+    intelligence: 10
+    wisdom: 10
+    charisma: 10
+    luck: 10

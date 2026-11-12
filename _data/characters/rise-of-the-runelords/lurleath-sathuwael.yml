@@ -1,0 +1,25 @@
+id: lurleath-sathuwael
+name: Lurleath Sathuwael
+folk: Genasi
+subfolk: Air
+art:
+  headshot: /assets/rise-of-the-runelords/images/characters/lurleath-headshot.png
+  full: /assets/rise-of-the-runelords/images/characters/lurlueath.png
+status: dead
+deaths:
+  - level: 4
+    killer: Dars Merven (human)
+player_id: damen
+statblock:
+  level: 4
+  max_hp: 29
+  class: Cleric
+  subclass: Tempest Domain
+  attributes:
+    strength: 14
+    dexterity: 14
+    constitution: 14
+    intelligence: 8
+    wisdom: 20
+    charisma: 13
+    luck: 18

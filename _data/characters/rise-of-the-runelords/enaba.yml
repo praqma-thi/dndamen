@@ -1,0 +1,23 @@
+id: enaba
+name: Enaba
+folk: Halfling
+subfolk: Lightfoot
+art:
+  headshot: /assets/rise-of-the-runelords/images/characters/enaba-headshot.png
+  full: /assets/rise-of-the-runelords/images/characters/enaba.png
+status: alive
+deaths: []
+player_id: drbosse
+statblock:
+  level: 5
+  max_hp: 10
+  class: Monk
+  subclass: Open Hand
+  attributes:
+    strength: 10
+    dexterity: 10
+    constitution: 10
+    intelligence: 10
+    wisdom: 10
+    charisma: 10
+    luck: 10

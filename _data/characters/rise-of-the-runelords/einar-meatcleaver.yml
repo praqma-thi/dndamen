@@ -1,0 +1,25 @@
+id: einar-meatcleaver
+name: Einar Meatcleaver
+folk: Human
+subfolk: Ulfen
+art:
+  headshot: /assets/rise-of-the-runelords/images/characters/einar-headshot.png
+  full: /assets/rise-of-the-runelords/images/characters/einar.png
+status: dead
+deaths:
+  - level: 2
+    killer: Koruvus (goblin)
+player_id: meatjelly
+statblock:
+  level: 2
+  max_hp: 10
+  class: Expert
+  subclass: Cook
+  attributes:
+    strength: 10
+    dexterity: 10
+    constitution: 10
+    intelligence: 10
+    wisdom: 10
+    charisma: 10
+    luck: 10
