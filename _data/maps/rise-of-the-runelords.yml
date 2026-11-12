@@ -1,0 +1,37 @@
+image: /assets/rise-of-the-runelords/images/map.png
+locations:
+  - name: Sandpoint
+    description: A sleepy fishing town along the Lost Coast where everything began. Birthplace of Toranak.
+    x: 29.7
+    y: 79.7
+    symbol: "🏘️"
+  - name: Magnimar
+    description: A major city-state which sits in the shadow of the awe-inspiring bridge - the Irespan.
+    x: 23.2
+    y: 82.5
+    symbol: "🏙️"
+  - name: Fort Rannick
+    description: A remote fortress in the Valley of Broken Trees built to protect river trade.
+    x: 62.6
+    y: 55.6
+    symbol: "🏰"
+  - name: Ilsurian
+    description: A small fishing town on the banks of Lake Syrantula.
+    x: 63.8
+    y: 71.0
+    symbol: "🏘️"
+  - name: Oaksbrook
+    description: The remote thorp where Kaela grew up.
+    x: 40.1
+    y: 78.2
+    symbol: "🏡"
+  - name: Zirahill
+    description: A quiet hamlet known for its agricultural and textile goods. Birthplace of Enaba.
+    x: 36.0
+    y: 81.0
+    symbol: "🏡"
+  - name: Arthfell
+    description: A grand forest at the heart of Andoran. Birthplace of Tiff.
+    x: 75.0
+    y: 95.5
+    symbol: "↘"

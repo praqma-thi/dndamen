@@ -16,6 +16,7 @@
       {% assign pin_x = location.x | plus: 0 %}
     <details
       class="map-pin{% if pin_x >= 50 %} map-pin-label-left{% endif %}"
+      name="map-pins-{{ adventure.slug }}"
       style="--pin-x: {{ location.x }}%; --pin-y: {{ location.y }}%;">
       <summary class="map-pin-symbol" aria-label="{{ location.name | escape }}">
         {{ location.symbol | default: "📍" | escape }}

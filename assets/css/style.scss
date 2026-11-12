@@ -536,6 +536,11 @@ h2 {
   z-index: 2;
 }
 
+.map-pin:hover:not([open]),
+.map-pin:focus-within:not([open]) {
+  z-index: 3;
+}
+
 .map-pin-symbol {
   position: relative;
   display: grid;
