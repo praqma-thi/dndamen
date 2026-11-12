@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% assign adventure = site.data.adventures | where: "slug", page.adventure | first %}
+{% case page.section %}
+  {% when "overview" %}
+    {% include adventure/overview.html %}
+  {% when "sessions" %}
+    {% include adventure/sessions.html %}
+  {% when "gallery" %}
+    {% include adventure/gallery.html %}
+  {% when "map" %}
+    {% include adventure/map.html %}
+{% endcase %}

@@ -1,3 +1,15 @@
+- slug: rise-of-the-runelords
+  name: Rise of the Runelords
+  logo: /assets/rise-of-the-runelords/images/rise-of-the-runelords.png
+  description: >
+    Five years after a tragic fire and spate of brutal murders, the people of Sandpoint eagerly anticipate the Swallowtail Festival to commemorate the consecration of the town's new temple.
+    At the height of the ceremony, disaster strikes!
+    In the days that follow, a sinister shadow settles over Sandpoint.
+    Rumors of goblin armies and wrathful monsters in forgotten ruins have set the populace on edge.
+    Now, Sandpoint's newest heroes must deal with treachery, goblins, and the rising threat of a forgotten empire.
+  characters: []
+  npcs: []
+  art-gallery: []
 - slug: ruins-of-azlant
   name: Ruins of Azlant
   logo: /assets/ruins-of-azlant/images/ruins-of-azlant.png

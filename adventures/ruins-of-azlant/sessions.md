@@ -1,36 +1,7 @@
 ---
-layout: default
+layout: adventure
 title: Session Logs
 adventure: ruins-of-azlant
+section: sessions
 permalink: /adventures/ruins-of-azlant/sessions/
 ---
-{% assign adventure = site.data.adventures | where: "slug", page.adventure | first %}
-{% assign logs = site.data.sessions[page.adventure] %}
-{% assign log_count = logs | size %}
-
-<header class="session-log-heading">
-  <p class="eyebrow">{{ adventure.name }}</p>
-  <h1>Session Logs</h1>
-  <a class="adventure-return" href="{{ '/adventures/' | append: adventure.slug | append: '/' | relative_url }}">← Return to adventure</a>
-</header>
-
-{% if log_count > 0 %}
-  {% capture ordered_log_keys %}{%- for log_pair in logs -%}{%- assign log = log_pair[1] -%}{{ log.date | date: "%Y-%m-%d" }}~{{ log_pair[0] }}{% unless forloop.last %}|{% endunless %}{%- endfor -%}{% endcapture %}
-  {% assign ordered_logs = ordered_log_keys | split: "|" | sort | reverse %}
-<div class="session-journal">
-  {% for ordered_log in ordered_logs %}
-    {% assign log_number = ordered_log | split: "~" | last %}
-    {% assign log = logs[log_number] %}
-    {% assign author = site.data.characters[log.author] %}
-  <article class="session-entry">
-    <header class="session-entry-header">
-      <time datetime="{{ log.date | date: "%Y-%m-%d" }}">{{ log.date | date: "%B %-d, %Y" }}</time>
-      <span class="session-author">by {{ author.name | escape }}</span>
-    </header>
-    <p>{{ log.entry | escape | newline_to_br }}</p>
-  </article>
-  {% endfor %}
-</div>
-{% else %}
-<p class="session-log-empty">No session logs have been added yet.</p>
-{% endif %}
