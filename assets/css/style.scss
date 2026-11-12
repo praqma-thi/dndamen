@@ -163,6 +163,37 @@ a:focus-visible {
   font-weight: 700;
 }
 
+.topbar-github {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 auto;
+  margin-left: auto;
+  place-items: center;
+  border-radius: 50%;
+}
+
+.topbar-github:hover,
+.topbar-github:focus-visible {
+  background: $surface-raised;
+  outline: 2px solid $gold;
+  outline-offset: 2px;
+}
+
+.topbar-github::before {
+  width: 1.35rem;
+  height: 1.35rem;
+  background-color: $gold;
+  -webkit-mask: url("../github-icon.svg") center / contain no-repeat;
+  mask: url("../github-icon.svg") center / contain no-repeat;
+  content: "";
+}
+
+.topbar-github:hover::before,
+.topbar-github:focus-visible::before {
+  background-color: #f0d99e;
+}
+
 .content {
   max-width: 1600px;
   margin: 0 auto;
