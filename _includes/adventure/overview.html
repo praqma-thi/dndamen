@@ -49,7 +49,7 @@
         <div class="character-picker">
         {% for character_id in adventure.characters %}
           {% assign character = site.data.characters[adventure.slug][character_id] %}
-          <label class="character-tab" for="character-radio-{{ character.id }}">
+          <label class="character-tab{% unless character.status == 'alive' %} character-tab-inactive{% endunless %}" for="character-radio-{{ character.id }}">
             <img src="{{ character.art.headshot | relative_url }}" alt="" loading="lazy">
             <span>{{ character.name | split: " " | first }}</span>
           </label>
@@ -70,7 +70,7 @@
             {% assign npc = site.data.npcs[adventure.slug][npc_id] %}
             {% assign npc_group = npc.group | strip %}
             {% if npc_group == group %}
-        <label class="character-tab" for="npc-radio-{{ npc.id }}">
+        <label class="character-tab{% unless npc.status == 'alive' %} character-tab-inactive{% endunless %}" for="npc-radio-{{ npc.id }}">
           <img src="{{ npc.art.headshot | relative_url }}" alt="" loading="lazy">
           <span>{{ npc.name | split: " " | first }}</span>
         </label>
@@ -90,7 +90,7 @@
     {% assign character = site.data.characters[adventure.slug][character_id] %}
     {% assign player = site.data.players | where: "id", character.player_id | first %}
     <section
-      class="character-panel"
+      class="character-panel{% unless character.status == 'alive' %} character-panel-inactive{% endunless %}"
       id="character-panel-{{ character.id }}"
       aria-labelledby="character-name-{{ character.id }}">
       <header class="character-summary-header">
@@ -152,7 +152,7 @@
   {% for npc_id in adventure.npcs %}
     {% assign npc = site.data.npcs[adventure.slug][npc_id] %}
     <section
-      class="character-panel npc-panel"
+      class="character-panel npc-panel{% unless npc.status == 'alive' %} character-panel-inactive{% endunless %}"
       id="npc-panel-{{ npc.id }}"
       aria-labelledby="npc-name-{{ npc.id }}">
       <header class="character-summary-header">
