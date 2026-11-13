@@ -15,13 +15,14 @@
   {% for ordered_log in ordered_logs %}
     {% assign log_number = ordered_log | split: "~" | last %}
     {% assign log = logs[log_number] %}
-    {% assign author = site.data.characters[page.adventure][log.author] %}
+    {% assign author = site.data.players | where: "id", log.author | first %}
   <article class="session-entry">
     <header class="session-entry-header">
-      <time datetime="{{ log.date | date: "%Y-%m-%d" }}">{{ log.date | date: "%B %-d, %Y" }}</time>
-      <span class="session-author">by {{ author.name | escape }}</span>
+      <strong class="session-number">Session {{ log_number | escape }}</strong>
+      <span class="session-author">by {{ author.alias | escape }}</span>
     </header>
-    <p>{{ log.entry | escape | newline_to_br }}</p>
+    <time datetime="{{ log.date | date: "%Y-%m-%d" }}">{{ log.date | date: "%B %-d, %Y" }}</time>
+    <div class="session-entry-body">{{ log.entry | markdownify }}</div>
   </article>
   {% endfor %}
 </div>

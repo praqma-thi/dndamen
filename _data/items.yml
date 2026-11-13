@@ -7,6 +7,7 @@
 
     **Quick Step.** Once per long rest, you can use a bonus action to gain an additional 30 feet of movement this turn. This movement does not provoke opportunity attacks.
   tags:
+    - ruins of azlant
     - wondrous item
 - id: wand-of-magic-missiles
   name: Wand of Magic Missiles
@@ -21,6 +22,7 @@
 
     **Using a Higher-Level Spell Slot.** The spell creates one more dart for each spell slot level above 1.
   tags:
+    - ruins of azlant
     - wand
 - id: wand-of-goodberry
   name: Wand of Goodberry
@@ -33,6 +35,7 @@
 
     **Goodberry.** Up to ten berries appear in your hand and are infused with magic for 24 hours. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day.
   tags:
+    - ruins of azlant
     - wand
 - id: shining-longsword
   name: Shining Longsword
@@ -45,6 +48,7 @@
 
     When unsheathed, this sword sheds bright emerald light in a 20-foot radius and dim light for an additional 20 feet.
   tags:
+    - ruins of azlant
     - weapon
 - id: talisman-of-good-fortune
   name: Talisman of Good Fortune
@@ -55,10 +59,12 @@
 
     **Luck.** The first time you roll a natural 1 on a d20 roll each day, roll again and take the new result instead.
   tags:
+    - ruins of azlant
     - wondrous item
 - id: parrying-buckler
   name: Parrying Buckler
   description: |
     While wielding this buckler, you gain a +1 bonus to AC. When a creature makes a melee attack roll against you, you can use your reaction to roll 1d4 and add the number rolled to your AC for that attack.
   tags:
+    - ruins of azlant
     - shield

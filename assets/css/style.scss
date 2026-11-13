@@ -418,10 +418,14 @@ h2 {
 }
 
 .session-entry time {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+}
+
+.session-number {
+  font-size: 1.5rem;
   color: $gold;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.15rem;
-  font-weight: 700;
 }
 
 .session-author {
@@ -429,9 +433,35 @@ h2 {
   font-size: 0.9rem;
 }
 
-.session-entry p {
-  margin: 0.6rem 0 0;
-  white-space: normal;
+.session-entry-body {
+  margin-top: 0.6rem;
+}
+
+.session-entry-body > :first-child {
+  margin-top: 0;
+}
+
+.session-entry-body > :last-child {
+  margin-bottom: 0;
+}
+
+.session-entry-body p {
+  margin: 0.6rem 0;
+}
+
+.session-entry-body ul,
+.session-entry-body ol {
+  margin: 0.4rem 0;
+  padding-left: 1.5rem;
+}
+
+.session-entry-body li + li {
+  margin-top: 0.15rem;
+}
+
+.session-entry-body li > ul,
+.session-entry-body li > ol {
+  margin-top: 0.15rem;
 }
 
 .session-log-empty {
