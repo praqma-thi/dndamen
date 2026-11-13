@@ -1,0 +1,10 @@
+id: xanesha
+name: Xanesha
+role: Cult Leader
+group: Villains
+folk: Lamia
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/xanesha-headshot.webp
+  full: /assets/rise-of-the-runelords/images/npcs/xanesha.webp
+status: dead
+description: Enigmatic leader of a cell of the cult of the Brotherhood of Seven. Orchestrated ritual sacrifice of greedy people from her lair in Magnimar. Slain by the party.

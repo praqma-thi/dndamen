@@ -1,0 +1,10 @@
+id: justice-ironbriar
+name: Ironbriar
+role: Justice of Magnimar
+group: Magnimar
+folk: Elf
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/ironbriar-headshot.webp
+  full: /assets/rise-of-the-runelords/images/npcs/ironbriar.webp
+status: alive
+description: A justice of Magnimar who - under the influence of Xanesha - spirited away citizens of Magnimar.

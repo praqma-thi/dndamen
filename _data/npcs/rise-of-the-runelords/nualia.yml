@@ -1,0 +1,10 @@
+id: nualia
+name: Nualia
+role: Devout Lamashtan
+group: Villains
+folk: Unknown
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/nualia-headshot.webp
+  full: /assets/rise-of-the-runelords/images/npcs/nualia.webp
+status: unknown
+description: Mastermind behind the goblin attacks on Sandpoint. Fled Thistletop fortress after her plans for some unknown ritual were thwarted by the party.

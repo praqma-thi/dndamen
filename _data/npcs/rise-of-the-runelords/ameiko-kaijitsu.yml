@@ -1,0 +1,11 @@
+id: ameiko-kaijitsu
+name: Ameiko Kaijitsu
+role: Rusty Dragon Innkeeper
+group: Sandpoint
+folk: Human
+subfolk: Tian-Min
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/ameiko-headshot.jpg
+  full: /assets/rise-of-the-runelords/images/npcs/ameiko.jpg
+status: alive
+description: Innkeeper of the Rusty Dragon, the finest establishment in Sandpoint.

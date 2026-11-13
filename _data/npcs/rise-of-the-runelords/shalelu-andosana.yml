@@ -1,0 +1,10 @@
+id: shalelu-andosana
+name: Shalelu Andosana
+role: Sandpoint Guardian
+group: Sandpoint
+folk: Elf
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/shalelu-headshot.jpg
+  full: /assets/rise-of-the-runelords/images/npcs/shalelu-andosana.jpg
+status: alive
+description: An elven ranger that has protected Sandpoint for many years. She recently struck out for Fort Rannick to reunite with family.

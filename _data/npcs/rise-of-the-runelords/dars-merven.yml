@@ -1,0 +1,10 @@
+id: dars-merven
+name: Dars Merven
+role: Renegade Slaver
+group: Villains
+folk: Human
+art:
+  headshot: /assets/images/headshot-placeholder.svg
+  full: /assets/images/placeholder.svg
+status: alive
+description: Ex-captor at the Underhold. Currently pursuing several party members. Killer of Lurleath.

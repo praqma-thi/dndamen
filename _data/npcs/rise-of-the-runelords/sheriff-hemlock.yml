@@ -1,0 +1,11 @@
+id: sheriff-hemlock
+name: Hemlock
+role: Sandpoint Sheriff
+group: Sandpoint
+folk: Human
+subfolk: Shoanti
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/hemlock-headshot.webp
+  full: /assets/rise-of-the-runelords/images/npcs/hemlock.webp
+status: alive
+description: Leader of the Sandpoint town watch, with quite a large amount of work on his plate as of recently.

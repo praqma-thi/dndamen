@@ -1,0 +1,10 @@
+id: aldern-foxglove
+name: Aldern Foxglove
+role: Unfortunate Nobleman
+group: Sandpoint
+folk: Human
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/aldern-headshot.webp
+  full: /assets/rise-of-the-runelords/images/npcs/aldern.webp
+status: dead
+description: A minor noble that returned to rebuild his family manor, only to fall prey to the curse that haunts it. Slain by the party.

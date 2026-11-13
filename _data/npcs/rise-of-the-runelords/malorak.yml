@@ -1,0 +1,11 @@
+id: malorak
+name: Malorak
+role: Shadowy Manipulator
+group: Villains
+folk: Tiefling
+subfolk: Infernal
+art:
+  headshot: /assets/images/headshot-placeholder.svg
+  full: /assets/images/placeholder.svg
+status: unknown
+description: A tiefling of great and mysterious power. Seemingly slain by the party.

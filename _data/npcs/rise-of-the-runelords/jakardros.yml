@@ -1,0 +1,10 @@
+id: jakardros
+name: Jakardros Sovark
+role: Ranger Commander
+group: Fort Rannick
+folk: Human
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/jakardros-headshot.jpg
+  full: /assets/rise-of-the-runelords/images/npcs/jakardros-sovark.jpg
+status: alive
+description: Commander of the Black Arrow rangers at Fort Rannick. Foster father to Shalelu.

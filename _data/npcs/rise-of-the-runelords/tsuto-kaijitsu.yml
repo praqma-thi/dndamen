@@ -1,0 +1,10 @@
+id: tsuto-kaijitsu
+name: Tsuto Kaijitsu
+role: Patricide Half-Brother
+group: Sandpoint
+folk: Auivarin
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/tsuto-headshot.webp
+  full: /assets/rise-of-the-runelords/images/npcs/tsuto.webp
+status: unknown
+description: In league with - or charmed by - Nualia, Tsuto helped coordinate goblin attacks on Sandpoint. He was captured by the party after having slain his father and kidnapping Ameiko. He escaped captivity.

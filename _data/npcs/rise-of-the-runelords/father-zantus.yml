@@ -1,0 +1,11 @@
+id: father-zantus
+name: Zantus
+role: Priest of Desna
+group: Sandpoint
+folk: human
+subfolk: Varisian
+art:
+  headshot: /assets/rise-of-the-runelords/images/npcs/zantus-headshot.webp
+  full: /assets/rise-of-the-runelords/images/npcs/zantus.webp
+status: alive
+description: Spiritual leader of Sandpoint. Though a devout priest of Desna, his cathedral welcomes all good-aligned deities.
