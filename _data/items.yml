@@ -5,7 +5,7 @@
 
     This shirt is made of light, gossamer-thin fabric embroidered with arrangements of winged feet.
 
-    **Quick Step.** Once per long rest, you can use a bonus action to gain an additional 30 feet of movement this turn. This movement does not provoke opportunity attacks.
+    **Quick Step.** Once per long rest, you can use a Bonus Action to gain an additional 30 feet of movement this turn. This movement does not provoke opportunity attacks.
   tags:
     - ruins of azlant
     - wondrous item
@@ -14,7 +14,7 @@
   description: |
     *Wand, uncommon*
 
-    This wand has 7 charges. While holding it, you can use an action to expend 1 of its charges to cast the *Magic Missile* spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.
+    This wand has 7 charges. While holding it, you can use an Action to expend 1 of its charges to cast the *Magic Missile* spell from it. For 1 charge, you cast the 1st-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.
 
     The wand regains 1d6 + 1 expended charges daily at dawn. If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles into ashes and is destroyed.
 
@@ -29,11 +29,11 @@
   description: |
     *Wand, uncommon*
 
-    This wand has 50 charges. While holding it, you can use an action to expend 1 of its charges to cast the *Goodberry* spell from it.
+    This wand has 50 charges. While holding it, you can use an Action to expend 1 of its charges to cast the *Goodberry* spell from it.
 
     If you expend the wand's last charge, it crumbles to dust and is destroyed.
 
-    **Goodberry.** Up to ten berries appear in your hand and are infused with magic for 24 hours. A creature can use its action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day.
+    **Goodberry.** Up to ten berries appear in your hand and are infused with magic for 24 hours. A creature can use its Action to eat one berry. Eating a berry restores 1 hit point, and the berry provides enough nourishment to sustain a creature for one day.
   tags:
     - ruins of azlant
     - wand
@@ -64,7 +64,161 @@
 - id: parrying-buckler
   name: Parrying Buckler
   description: |
-    While wielding this buckler, you gain a +1 bonus to AC. When a creature makes a melee attack roll against you, you can use your reaction to roll 1d4 and add the number rolled to your AC for that attack.
+    While wielding this buckler, you gain a +1 bonus to AC. When a creature makes a melee attack roll against you, you can use your reAction to roll 1d4 and add the number rolled to your AC for that attack.
   tags:
     - ruins of azlant
     - shield
+- id: soul-stealer
+  name: Soul Stealer
+  description: |
+    *Weapon (dagger), uncommon (requires attunement)*
+
+    A dark, ominous blade with runes etched along its length.
+
+    You gain a +1 bonus to attack and damage rolls made with it.
+    When you reduce a creature to 0 hit points with the sword, you regain 1d4 hit points.
+    The sword's runes glow faintly whenever it absorbs a soul, and the wielder experiences fleeting, vivid memories of the absorbed soul's life.
+    Some memories linger and can be remembered.
+  tags:
+    - rise of the runelords
+    - weapon
+- id: bracelet-of-elemental-protection
+  name: Bracelet of Elemental Protection
+  description: |
+    *Wondrous item, rare (requires attunement)*
+
+    This silver bracelet is adorned with small gemstones representing the four elements.
+
+    When you attune to it, choose acid, cold, fire, or lightning.
+    You have resistance to damage of the chosen type.
+
+    Once per day, when you take elemental damage, you can absorb 1d6 of it.
+    As an Action, you can release it in a 15-foot cone.
+    Each creature in the cone must make a DC 12 Dexterity saving throw, taking half the released damage on a successful save.
+  tags:
+    - rise of the runelords
+    - wondrous item
+- id: dagger-of-return
+  name: Dagger of Return
+  description: |
+    *Weapon (dagger), uncommon (requires attunement)*
+
+    This single-sided dagger has a silver spine and a pommel inset with a small, smooth sapphire.
+    After you throw it as part of the Attack Action, it teleports back to your hand after the attack.
+  tags:
+    - rise of the runelords
+    - weapon
+- id: skibidi-scimitar
+  name: Skibidi Scimitar
+  description: |
+    *Weapon (scimitar), rare (requires attunement)*
+
+    This sleek, curved blade is etched with flowing runes that pulse in time with a faint, rhythmic hum, like distant drums.
+    While you hold it, you can almost feel the world dancing around you.
+
+    You gain a +1 bonus to attack and damage rolls made with this magic weapon, and a +1 bonus to AC while holding it.
+
+    **Dance of Blades.**
+    When you score a critical hit with this weapon, you can immediately make one melee attack against a different creature within 5 feet of you.
+  tags:
+    - rise of the runelords
+    - weapon
+- id: ring-of-shadows
+  name: Ring of Shadows
+  description: |
+    *Wondrous item, rare (requires attunement)*
+
+    This sleek, black ring seems to absorb light.
+    You have Advantage on Dexterity (Stealth) checks.
+
+    Once per day, you can cast *Invisibility* from the ring, lasting up to 1 minute.
+    When the invisibility ends, the ring glows like a candle, shedding bright light in a 5-foot radius and dim light for an additional 5 feet for 1 minute.
+  tags:
+    - rise of the runelords
+    - wondrous item
+- id: cloak-of-resistance
+  name: Cloak of Resistance
+  description: |
+    *Wondrous item, uncommon (requires attunement)*
+
+    You gain a +1 bonus to all saving throws while wearing this cloak.
+  tags:
+    - rise of the runelords
+    - wondrous item
+- id: dagger-of-venom
+  name: Dagger of Venom
+  description: |
+    *Weapon (dagger), rare (requires attunement)*
+
+    This wicked-looking dagger has a greenish tint to its blade.
+    You gain a +1 bonus to attack and damage rolls made with it.
+
+    Once per day, you can use a Bonus Action to coat the blade in poison.
+    While coated, it emits a faint, eerie glow.
+    On a hit, the target must succeed on a DC 12 Constitution saving throw or take 1d4 poison damage at the start of each of its turns for 1 minute.
+    The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+  tags:
+    - rise of the runelords
+    - weapon
+- id: belt-of-giant-strength
+  name: Belt of Giant Strength
+  description: |
+    *Wondrous item, uncommon (requires attunement)*
+
+    This sturdy leather belt has a buckle shaped like a giant's face.
+    While wearing it, your Strength score is 19, unless it is already 19 or higher.
+    You have Advantage on Strength (Athletics) checks made to grapple or lift heavy objects.
+  tags:
+    - rise of the runelords
+    - wondrous item
+- id: scabbard-of-the-swift-blade
+  name: Scabbard of the Swift Blade
+  description: |
+    *Wondrous item, rare (requires attunement)*
+
+    This finely crafted scabbard feels warm to the touch.
+
+    You can draw the sword from the scabbard as a Free Action, and doing so grants you an extra attack once per combat.
+    At dawn, the scabbard repairs 1d4 points of damage to the sword.
+    While the sword is sheathed, the scabbard emits a soft, comforting warmth and you have resistance to cold damage.
+  tags:
+    - rise of the runelords
+    - wondrous item
+- id: robes-of-blending
+  name: Robes of Blending
+  description: |
+    *Wondrous item, uncommon (requires attunement)*
+
+    Once per long rest, you can use an Action to change your appearance as if you had cast the *Alter Self* spell.
+  tags:
+    - rise of the runelords
+    - wondrous item
+- id: sihedron-medallion
+  name: Sihedron Medallion
+  description: |
+    *Wondrous item, rare (requires attunement; does not consume an attunement slot)*
+
+    While wearing this medallion, you are immune to disease but vulnerable to scrying.
+
+    Once per long rest, you can use an Action to gain 2d8 + 4 temporary hit points.
+  tags:
+    - rise of the runelords
+    - wondrous item
+- id: golembane-scarab
+  name: Golembane Scarab
+  description: |
+    *Wondrous item, uncommon (requires attunement)*
+
+    While wearing this brooch, you have Advantage on attack rolls and skill checks relating to golems.
+  tags:
+    - rise of the runelords
+    - wondrous item
+- id: necklace-of-adaptation
+  name: Necklace of Adaptation
+  description: |
+    *Wondrous item, uncommon (requires attunement)*
+
+    While wearing this necklace, you can breathe normally in any environment and have Advantage on saving throws against harmful gases and vapors, such as *Cloudkill*, *Stinking Cloud*, inhaled poisons, and certain breath weapons.
+  tags:
+    - rise of the runelords
+    - wondrous item
