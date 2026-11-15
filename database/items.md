@@ -3,7 +3,7 @@ layout: default
 title: Items
 permalink: /database/items/
 ---
-{% assign items = site.data.items %}
+{% assign items = site.data.items | sort: "name" %}
 {% assign item_count = items | size %}
 {% capture item_tags %}{% for item in items %}{% for tag in item.tags %}{{ tag | downcase | strip }}||{% endfor %}{% endfor %}{% endcapture %}
 {% assign item_tags = item_tags | split: "||" | uniq | sort %}
