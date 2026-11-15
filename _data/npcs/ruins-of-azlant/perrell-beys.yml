@@ -1,0 +1,13 @@
+id: perrell-beys
+name: Perrell Beys
+role: Curious Historian
+group: Colonist (2nd wave)
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/ruins-of-azlant/images/npcs/perrell-beys.png
+  full: /assets/ruins-of-azlant/images/npcs/perrell-beys.png
+status: alive
+description:
+  Employed as a historian by the Bountiful Venture Company, Perrell would have volunteered to join the colony out of academic interest even without the job.
+  She chronicles daily events in Talmandor's Bounty, provides Ramona with scholarly advice on ruins and relics, and makes high-quality maps of the island for her employers.

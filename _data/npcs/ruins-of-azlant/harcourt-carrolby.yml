@@ -1,0 +1,13 @@
+id: harcourt-carrolby
+name: Harcourt Carrolby
+role: Wealthy Entrepreneur
+group: Colonist (2nd wave)
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/ruins-of-azlant/images/npcs/harcourt-carrolby.png
+  full: /assets/ruins-of-azlant/images/npcs/harcourt-carrolby.png
+status: alive
+description:
+    Youngest adult son of the Carrolby family, wealthy horse breeders in Andoran.
+    Harcourt receives a stipend from the family business, intending to join the colony, establish himself, hire workers to build stables, and import horses to the island at later date, thus expanding the family business to Ancorato and beyond.

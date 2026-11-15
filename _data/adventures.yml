@@ -90,10 +90,16 @@
   npcs:
     - ramona-avandth
     - alba-divenvaar
+    - antona-sedgewick
     - anya-sandstrider
     - carver-hastings
     - eamon-caranth
+    - faedwyr-trundlebrook
+    - harcourt-carrolby
     - kurvis-nurpico
+    - luetin-calewick
+    - lyra-heatherly
+    - perrell-beys
     - rayland-arkley
   art-gallery:
     - image: "/assets/ruins-of-azlant/images/gallery/hangry.png"

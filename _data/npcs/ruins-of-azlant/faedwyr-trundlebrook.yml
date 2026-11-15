@@ -1,0 +1,13 @@
+id: faedwyr-trundlebrook
+name: Faedwyr Trundlebrook
+role: Timid Farmer
+group: Colonist (2nd wave)
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/ruins-of-azlant/images/npcs/faedwyr-trundlebrook.png
+  full: /assets/ruins-of-azlant/images/npcs/faedwyr-trundlebrook.png
+status: alive
+description: >
+  While many would consider Faedwyr a simpleton, he lives by clear rules that make him a reliable friend.
+  "When a friend asks for help, you help them", "Actions speak louder than words", and "Finish what you started" are just some of his grandfather's many mottos he adheres to.

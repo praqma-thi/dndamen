@@ -1,0 +1,13 @@
+id: lyra-heatherly
+name: Lyra Heatherly
+role: Daredevil Surveyor
+group: Colonist (2nd wave)
+folk: Aiuvarin
+subfolk: Aiudeen
+art:
+  headshot: /assets/ruins-of-azlant/images/npcs/lyra-heatherly.png
+  full: /assets/ruins-of-azlant/images/npcs/lyra-heatherly.png
+status: alive
+description:
+  Employed by the Bountiful Venture Company as a scholar and surveyor tasked with cataloguing natural resources and fresh water locations.
+  Lyra has a penchant for danger yet somehow manages to stay out of it.

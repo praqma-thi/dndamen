@@ -1,0 +1,13 @@
+id: luetin-calewick
+name: Luetin Calewick
+role: Assistant Blacksmith
+group: Colonist (2nd wave)
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/ruins-of-azlant/images/npcs/luetin-calewick.png
+  full: /assets/ruins-of-azlant/images/npcs/luetin-calewick.png
+status: alive
+description:
+  A balding man with a bushy mustache meant to serve as an assistant blacksmith.
+  While harmless enough, his overly masculine attitudes often rub people the wrong way.
