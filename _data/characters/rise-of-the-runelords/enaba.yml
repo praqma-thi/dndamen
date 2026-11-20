@@ -14,10 +14,10 @@ statblock:
   class: Monk
   subclass: Open Hand
   attributes:
-    strength: 10
-    dexterity: 10
-    constitution: 10
-    intelligence: 10
-    wisdom: 10
+    strength: 12
+    dexterity: 22
+    constitution: 17
+    intelligence: 13
+    wisdom: 15
     charisma: 10
-    luck: 10
+    luck: 12

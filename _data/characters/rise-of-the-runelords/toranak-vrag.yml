@@ -13,10 +13,10 @@ statblock:
   class: Paladin
   subclass: Oath of the Ancients
   attributes:
-    strength: 10
-    dexterity: 10
-    constitution: 10
-    intelligence: 10
-    wisdom: 10
-    charisma: 10
-    luck: 10
+    strength: 19
+    dexterity: 11
+    constitution: 19
+    intelligence: 11
+    wisdom: 7
+    charisma: 15
+    luck: 16

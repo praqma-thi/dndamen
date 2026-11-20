@@ -16,10 +16,10 @@ statblock:
   class: Rogue
   subclass: Arcane Trickster
   attributes:
-    strength: 10
-    dexterity: 10
-    constitution: 10
-    intelligence: 10
-    wisdom: 10
-    charisma: 10
-    luck: 10
+    strength: 9
+    dexterity: 18
+    constitution: 12
+    intelligence: 15
+    wisdom: 13
+    charisma: 15
+    luck: 11
