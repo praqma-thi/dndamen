@@ -8,4 +8,8 @@ art:
   headshot: /assets/ruins-of-azlant/images/npcs/antona-sedgewick.png
   full: /assets/ruins-of-azlant/images/npcs/antona-sedgewick.png
 status: alive
-description: Capable, proud and with a penchant for cussing, Antona joined the colony to escape her lowly position as a city guard and a difficult family situation. She is eager to prove herself and become an armswoman of import.
+description:
+  Capable, proud and with a penchant for cussing, Antona joined the colony to escape her lowly position as a city guard and a difficult family situation.
+  She is eager to prove herself and become an armswoman of import.
+
+  Already proven herself motivated and skilled, Antona helps organize the colony guard as a sergeant, with only her conduct and demeanor holding her back.

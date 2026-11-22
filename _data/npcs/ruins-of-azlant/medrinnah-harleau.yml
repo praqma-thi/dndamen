@@ -1,0 +1,17 @@
+id: medrinnah-harleau
+name: Medrinnah Harleau
+role: Rebellious Teenager
+group: Colonist (2nd wave)
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/ruins-of-azlant/images/npcs/medrinnah-harleau.png
+  full: /assets/ruins-of-azlant/images/npcs/medrinnah-harleau.png
+status: alive
+description:
+  Medrinnah is resentful of her overbearing mother - Sighra - for bringing her along to Talmandor's Bounty.
+  Forced to live in the middle of nowhere, and unlikely to ever see her friends again, Medrinnah's rebellious streak is rapidly escalating.
+
+  She is apprenticing as a tailor under Jeanne who - emphatetic to the child's situation - keeps a very relaxed form of tutoring.
+
+  Known to few - and not her mother - is Medrinnah's talent for lockpicking and inconspicious relocation of possessions.

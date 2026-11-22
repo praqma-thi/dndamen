@@ -1,0 +1,17 @@
+id: sylas-weatherbee
+name: Sylas Weatherbee
+role: Tormented Spirit
+group: Colonist (1st wave)
+folk: Human
+subfolk: Avistani
+art:
+  headshot: /assets/ruins-of-azlant/images/npcs/sylas-weatherbee.png
+  full: /assets/ruins-of-azlant/images/npcs/sylas-weatherbee.png
+status: dead
+description: >
+  Sylas Weatherbee was a farmer among the first wave of colonists to Talmandor's Bounty.
+
+  At some point, he died at the hands of a close friend.
+  Unable to come to terms with his fate, his tormented spirit rose as a poltergeist and now haunts the colony's chapel.
+
+  Despite Eamon and Kurvis' efforts to assauge their fears, the sprit's presence unnerves many of the colonists.
