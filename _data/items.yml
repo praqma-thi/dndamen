@@ -44,7 +44,7 @@
 - id: shining-longsword
   name: Shining Longsword
   description: |
-    *Weapon (longsword), uncommon (requires attunement)*
+    *Weapon (longsword), uncommon*
 
     This beautiful, straight blade has a grip wrapped in green leather and gold wire. It shines with a pale emerald light.
 
@@ -274,3 +274,109 @@
   tags:
   - ruins of azlant
   - wondrous item
+
+- id: everburning-torch
+  name: Everburning Torch
+  description: |
+    *Wondrous item, uncommon*
+
+    This otherwise normal torch has a continual flame spell cast on it.
+    This causes it to shed light like an ordinary torch, but it does not emit heat or deal fire damage if used as a weapon.
+  tags:
+    - ruins of azlant
+    - wondrous item
+
+- id: coral-trident
+  name: Coral Trident
+  description: |
+    *Weapon (trident), uncommon*
+
+    This trident of polished coral is far harder and sharper than one would imagine.
+    Attached to it is a tough yet slim, silvery rope.
+
+    You gain a +1 bonus to attack rolls and damage rolls made with this magic weapon.
+
+    As a Bonus Action, you can reel in the trident.
+  tags:
+    - ruins of azlant
+    - weapon
+
+- id: bottle-of-air
+  name: Bottle of Air
+  description: |
+    *Wondrous item, uncommon*
+
+    This item appears to be a normal glass bottle with a cork.
+    When taken to any airless environment, it retains air within it at all times, continually renewing its contents.
+    This means that a character can draw air out of the bottle to breathe.
+    The bottle can even be shared by multiple characters who pass it around.
+    Breathing out of the bottle is an Action, but a character so doing can then act for as long as they can hold their breath.
+  tags:
+    - ruins of azlant
+    - wondrous item
+
+- id: ring-of-elemental-absorption
+  name: Ring of Elemental Absorption
+  description: |
+    *Wondrous item, rare (requires attunement)*
+
+    This tungsten ring has a series of notches carved on one end in a spiral pattern.
+
+    When you attune to this ring, choose between *cold*, *fire*, or *lightning*.
+    You have resistance to the chosen element.
+
+    **Absorb Elements**.
+    When you take damage of your chosen element, you may use your Reaction to reduce the damage by up to 5.
+    The next time you land a weapon attack before the end of your next turn, you may add the prevented damage to the damage dealt.
+  tags:
+    - ruins of azlant
+    - wondrous item
+
+- id: chain-shirt-m1
+  name: Mithral Chain Shirt +1
+  description: |
+    *Armor (chain shirt), rare*
+
+    *Made of interlocking mithral rings, this chain shirt is exceptionally light.*
+
+    You have a +1 bonus to AC while wearing this armor.
+
+    - Medium armor
+    - AC: 13 + Dex (max 2) + 1
+    - No Strength requirement
+    - No Stealth disadvantage
+    - Can be worn under normal clothes
+  tags:
+    - ruins of azlant
+    - armor
+
+- id: ring-of-swimming
+  name: Ring of Swimming
+  description: |
+    *Wondrous item, uncommon*
+
+    _This silver ring with aquamarine insets depicts two jousting swordfish._
+
+    You have a Swim Speed of 40 feet while wearing this ring.
+  tags:
+    - ruins of azlant
+    - wondrous item
+
+- id: wand-of-clear-mind
+  name: Wand of Clear Mind
+  description: |
+    *Wand, uncommon*
+
+    This wand has 4 charges. While holding it, you can use an Action to expend 1 of its charges to cast the _Clear Mind_ spell from it.
+
+    This wand regains 1d4 expended charges daily at dawn.
+    If you expend the wand's last charge, roll a d20. On a 1, the wand crumbles to dust and is destroyed.
+
+    **Clear Mind**.
+    You target one creature within 30 ft and cause their mind to be instantly cleared of a number of various mind-altering effects.
+    These include the effects of a sleep spell, being stunned or unconscious, and even alcohol intoxication.
+    Additionally, the spell heals 1 hit point of damage.
+    The spell will also grant the victim an additional saving throw against charm effects at the start of their next turn.
+  tags:
+    - ruins of azlant
+    - wand
